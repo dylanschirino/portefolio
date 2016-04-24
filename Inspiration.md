@@ -5,8 +5,4 @@
 * [la section de citation we hiring](https://www.caddis.co)
 * [la section about me](http://vangeltzo.com)
 * [une section de compétence](https://www.behance.net/gallery/27953905/Cristiana-Oliveira-Personal-Website)
-* []()
-* []()
-* []()
-* []()
-* []()
+
