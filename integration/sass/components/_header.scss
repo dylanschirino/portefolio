@@ -1,0 +1,71 @@
+/* PORTEFOLIO
+ *
+ * /sass/components/header.scss - Design of header stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 06/05/2016
+ */
+ .header{
+   background: url("../img/mainimage.jpg") no-repeat center center;
+   background-size: cover;
+   &__bckg{
+     background-color: #627682;
+     opacity: 0.8;
+     height: 100vh;
+   }
+ }
+.menu{
+  &__list{
+    padding-top: 5.5em;
+    border-bottom: 1px solid $white;
+  }
+  &__link{
+    font-size: 1.8em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color:$white;
+    display: block;
+    transition: .2s linear;
+    &:hover{
+      color:black;
+      transform: rotate(-5deg);
+    }
+    &--active{
+      &::after{
+        content:"";
+        display: block;
+        width: 10px;
+        height:10px;
+        background: $white;
+        border-radius: 50%;
+        margin:0.388em auto 0.5em auto;
+      }
+    }
+  }
+}
+
+.mainimage{
+  color: $white;
+  &__title{
+    font-size: 4.8em;
+    padding:2.75em 0 0.6em 0;
+  }
+  &__subtitle{
+    font-size: 3em;
+  }
+    &__link{
+      color:white;
+      display: inline-block;
+      transition: .2s ease-in-out;
+      &:hover{
+        transform: translateY(10px);
+      }
+      &::after{
+        font-family:$glyphsStack;
+        font-size:2.5em;
+        padding-top:4.4em;
+        content:"\e905";
+        display: block;
+      }
+    }
+}
