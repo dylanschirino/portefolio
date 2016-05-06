@@ -1,0 +1,25 @@
+/* PORTEFOLIO
+ *
+ * /sass/object/guesswhat.scss - NON Design of guesswhat stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 06/05/2016
+ */
+
+.guesswhat{
+  height: 30em;
+  &__title{
+    margin-left: 5.1em;
+    margin-top: 1.5em;
+  }
+  &__subtitle{
+    text-align: center;
+  }
+  &__button{
+    display: block;
+    margin:2.5em auto;
+    text-align:center;
+    width:14.2em;
+    height: 3.7em;
+  }
+}

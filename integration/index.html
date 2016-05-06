@@ -2,8 +2,8 @@
 <html lang="fr">
 <head>
   <!--[if lt IE 9]>
-<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
   <meta charset="utf-8">
   <meta name="description" content="Portefolio de Dylan Schirino">
   <meta name="author" content="Dylan Schirino">
@@ -13,40 +13,73 @@
 </head>
 <header class="header">
   <div class="header__bckg">
-  <h1 aria-level="1" role="heading" class="header__title">Portefolio - Accueil</h1>
-<nav class="header__menu">
+    <h1 aria-level="1" role="heading" class="header__title">Portefolio - Accueil</h1>
+    <nav class="header__menu">
 
-  <h2 aria-level="2" role="heading" class="menu__title">Menu Principal</h2>
+      <h2 aria-level="2" role="heading" class="menu__title">Menu Principal</h2>
+      <div id="burger-shower" class="menu__burger">
+        <span class="visualhidden">menu</span>
+        <span class="menu__global menu__global--top"></span>
+        <span class="menu__global menu__global--middle"></span>
+        <span class="menu__global menu__global--bottom"></span>
+      </div>
+      <ul class="menu__list" id="menu">
+        <li class="menu__element">
+          <a class="menu__link menu__link--active" href="index.html" alt="Vers la page d'accueil">Acceuil</a>
+        </li>
+        <li class="menu__element">
+          <a class="menu__link" href="projet.html" alt="Vers la page d'accueil">Projet</a>
+        </li>
+        <li class="menu__element">
+          <a class="menu__link" href="about.html" alt="Vers la page d'accueil">About me</a>
+        </li>
+        <li class="menu__element">
+          <a class="menu__link" href="contact.html" alt="Vers la page d'accueil">Contact</a>
+        </li>
+        <li class="menu__element">
+          <a class="menu__link" href="projet.html" alt="Vers la page d'accueil">CV</a>
+        </li>
+      </ul>
+    </nav>
 
-  <ul class="menu__list">
-    <li class="menu__element">
-      <a class="menu__link menu__link--active" href="index.html" alt="Vers la page d'accueil">Acceuil</a>
-    </li>
-    <li class="menu__element">
-      <a class="menu__link" href="projet.html" alt="Vers la page d'accueil">Projet</a>
-    </li>
-    <li class="menu__element">
-      <a class="menu__link" href="about.html" alt="Vers la page d'accueil">About me</a>
-    </li>
-    <li class="menu__element">
-      <a class="menu__link" href="contact.html" alt="Vers la page d'accueil">Contact</a>
-    </li>
-    <li class="menu__element">
-      <a class="menu__link" href="projet.html" alt="Vers la page d'accueil">CV</a>
-    </li>
-  </ul>
-</nav>
-
-<section class="mainimage">
-<h2 class="mainimage__title" aria-level="2" role="heading">I'm Dylan Schirino</h2>
-<p class="mainimage__subtitle">
-  Un web-designer belge qui réalise vos sites-web.
-</p>
-<a href="#" class="mainimage__link" alt="Découvrir plus sur la page d'accueil"><span class="visualhidden">Accéder vers le bas</span></a>
-</section>
-</div>
+    <section class="mainimage">
+      <h2 class="mainimage__title" aria-level="2" role="heading">I'm Dylan Schirino</h2>
+      <p class="mainimage__subtitle">
+        Un web-designer belge qui réalise vos sites-web.
+      </p>
+      <a href="#content" class="mainimage__link" alt="Découvrir plus sur la page d'accueil"><span class="visualhidden">Accéder vers le bas</span></a>
+    </section>
+  </div>
 </header>
+<body>
+  <main id="content">
+    <section class="whyme">
+      <h3 class="whyme__title" aria-level="3" role="heading">
+        Pourquoi moi&nbsp;?
+      </h3>
+      <div class="whyme__container">
+        <div class="whyme__presentation">
+          <p class="presentation__text presentation__text--left">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          </p>
+        </div>
+        <div class="whyme__presentation whyme__presentation--right">
+          <p class="presentation__text presentation__text--right">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          </p>
+        </div>
+      </div>
+    </section>
 
-  <body>
-  </body>
+    <section class="guesswhat">
+      <h3 class="guesswhat__title" arial-level="3" role="heading">Hey devinez quoi &nbsp;?</h3>
+      <div class="gueswhat__center">
+        <p class="guesswhat__subtitle">Je suis disponible&nbsp;!</p>
+        <a class="guesswhat__button" href="contact.html" title="Vers la page de contact">Contactez moi </a>
+      </div>
+    </section>
+  </main>
+  <script type="text/javascript" src="assets/jquery-2.2.1.min.js"></script>
+  <script type="text/javascript" src="assets/burger.js"></script>
+</body>
 </html>

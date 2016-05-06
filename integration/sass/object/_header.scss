@@ -27,3 +27,28 @@
  .mainimage{
    text-align: center;
  }
+
+ @media screen and (max-width:669px) {
+   .menu{
+     &__list{
+       margin-left: 0;
+
+     }
+   }
+ }
+ @media screen and (max-width:579px) {
+   .menu{
+    &__list{
+      display: none;
+      width:90%;
+      margin: auto;
+      &--open{
+        display:block;
+      }
+    }
+    &__element{
+      display: block;
+      padding-bottom:3em;
+    }
+   }
+ }

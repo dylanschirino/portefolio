@@ -5,3 +5,30 @@
  * coded by Dylan Schirino
  * started at 06/05/2016
  */
+
+ .whyme{
+   &::after{
+     content: "";
+     display: block;
+     clear: both;
+   }
+   &__presentation{
+     width:30%;
+     margin-left: 8em;
+     float: left;
+     margin-top: -5em;
+     &--right{
+       float: right;
+       margin-right: 7em;
+       margin-left: 0;
+     }
+   }
+ }
+ @media screen and (max-width:1068px) {
+   .whyme{
+     &__presentation{
+       margin-left: 3em;
+       width:30%;
+     }
+   }
+ }
