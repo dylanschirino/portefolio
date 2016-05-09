@@ -76,7 +76,7 @@ table {
 html {
   font: 62.5% "montserratregular", Helvetica Neue, Arial, sans-serif; }
 
-a {
+a, abbr {
   text-decoration: none; }
 
 /* PORTEFOLIO
@@ -167,6 +167,67 @@ a {
     text-align: center;
     width: 14.2em;
     height: 3.7em; }
+
+/* PORTEFOLIO
+*
+* /sass/object/skills.scss - NON Design of skills stylesheet
+*
+* coded by Dylan Schirino
+* started at 09/05/2016
+*/
+.skills::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.skills__title {
+  text-align: right;
+  margin-right: 6.4em; }
+
+.skills__container {
+  width: 33em;
+  margin: 1em 0 0 12.5em; }
+  .skills__container--left {
+    float: left; }
+  .skills__container--right {
+    float: right;
+    margin-left: 0;
+    margin-right: 11.4em; }
+
+.skills__content {
+  width: 31.7em;
+  height: 1.9em; }
+
+.skills__label {
+  padding: 0.8em 0; }
+
+.skills__purcent {
+  display: block;
+  position: relative;
+  top: 3px;
+  height: 1.3em; }
+  .skills__purcent--html {
+    width: 27.1em; }
+  .skills__purcent--js {
+    width: 18.5em; }
+  .skills__purcent--php {
+    width: 19.5em; }
+  .skills__purcent--illu {
+    width: 27.1em; }
+  .skills__purcent--css {
+    width: 29.7em; }
+  .skills__purcent--jquery {
+    width: 50%; }
+  .skills__purcent--photoshop {
+    width: 28em; }
+  .skills__purcent--wordpress {
+    width: 24.4em; }
+
+.skills__button {
+  display: block;
+  width: 14.2em;
+  height: 3.94em;
+  margin: 2em auto; }
 
 /* PORTEFOLIO
 *
@@ -345,5 +406,61 @@ a {
     .guesswhat__button:hover {
       background-color: #303A40;
       color: white; }
+
+/* PORTEFOLIO
+*
+* /sass/components/skills.scss - Design of skills stylesheet
+*
+* coded by Dylan Schirino
+* started at 09/05/2016
+*/
+.skills {
+  background: url("../img/pattern.jpg") no-repeat center center;
+  padding-bottom: 7em;
+  background-size: cover; }
+  .skills__title {
+    font-size: 2.4em;
+    text-transform: uppercase;
+    padding-top: 3.7916em; }
+  .skills__label {
+    font: 1.6em "montserratlight", Helvetica Neue, Arial, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none; }
+  .skills__content {
+    background-color: #E0E7EC;
+    border-radius: 8px; }
+  .skills__purcent {
+    border-radius: 8px;
+    text-indent: -99999px; }
+    .skills__purcent--html {
+      background-color: #EF6533; }
+    .skills__purcent--js {
+      background-color: #EF338B; }
+    .skills__purcent--php {
+      background-color: #6AA280; }
+    .skills__purcent--illu {
+      background-color: #F3D675; }
+    .skills__purcent--css {
+      background-color: #8CD9F2; }
+    .skills__purcent--jquery {
+      background-color: #50E3C2; }
+    .skills__purcent--photoshop {
+      background-color: #4A90E2; }
+    .skills__purcent--wordpress {
+      background-color: black; }
+  .skills__button {
+    font: 1.8em "montserratregular", Helvetica Neue, Arial, sans-serif;
+    line-height: 3.8em;
+    color: #303A40;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: white;
+    border: 3px solid #303A40;
+    text-align: center;
+    border-radius: 5px;
+    transition: .2s ease-in-out; }
+    .skills__button:hover {
+      color: white;
+      background-color: #303A40; }
 
 /*# sourceMappingURL=styles.css.map */

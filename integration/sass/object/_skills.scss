@@ -1,0 +1,74 @@
+/* PORTEFOLIO
+*
+* /sass/object/skills.scss - NON Design of skills stylesheet
+*
+* coded by Dylan Schirino
+* started at 09/05/2016
+*/
+
+.skills{
+  &::after{
+    content:"";
+    display: block;
+    clear: both;
+  }
+  &__title{
+    text-align: right;
+    margin-right: 6.4em;
+  }
+  &__container{
+    width:33em;
+    margin:1em 0 0 12.5em;
+    &--left{
+      float: left;
+    }
+    &--right{
+      float: right;
+      margin-left: 0;
+      margin-right: 11.4em;
+    }
+  }
+  &__content{
+    width: 31.7em;
+    height: 1.9em;
+  }
+  &__label{
+    padding:0.8em 0;
+  }
+  &__purcent{
+    display:block;
+    position: relative;
+    top:3px;
+    height: 1.3em;
+    &--html{
+      width:27.1em;
+    }
+    &--js{
+      width: 18.5em;
+    }
+    &--php{
+      width: 19.5em;
+    }
+    &--illu{
+      width: 27.1em;
+    }
+    &--css{
+      width: 29.7em;
+    }
+    &--jquery{
+      width: 50%;
+    }
+    &--photoshop{
+      width: 28em;
+    }
+    &--wordpress{
+      width: 24.4em;
+    }
+  }
+  &__button{
+    display: block;
+    width: 14.2em;
+    height: 3.94em;
+    margin:2em auto;
+  }
+}

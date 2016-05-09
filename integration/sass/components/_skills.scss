@@ -1,0 +1,71 @@
+/* PORTEFOLIO
+*
+* /sass/components/skills.scss - Design of skills stylesheet
+*
+* coded by Dylan Schirino
+* started at 09/05/2016
+*/
+
+.skills{
+  background:url("../img/pattern.jpg") no-repeat center center;
+  padding-bottom:7em;
+  background-size: cover;
+  &__title{
+    font-size:2.4em;
+    text-transform: uppercase;
+    padding-top: 3.7916em
+  }
+  &__label{
+    font:1.6em $montserratLight;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  &__content{
+    background-color: #E0E7EC;
+    border-radius: 8px;
+  }
+  &__purcent{
+    border-radius: 8px;
+    text-indent:-99999px;
+    &--html{
+      background-color: #EF6533;
+    }
+    &--js{
+      background-color: #EF338B;
+    }
+    &--php{
+      background-color: #6AA280;
+    }
+    &--illu{
+      background-color: #F3D675;
+    }
+    &--css{
+      background-color: #8CD9F2;
+    }
+    &--jquery{
+      background-color: #50E3C2;
+    }
+    &--photoshop{
+      background-color: #4A90E2;
+    }
+    &--wordpress{
+      background-color: $black;
+    }
+  }
+  &__button{
+    font: 1.8em $montserratRegular;
+    line-height: 3.8em;
+    color:#303A40;
+    letter-spacing:1px;
+    text-transform: uppercase;
+    background-color: $white;
+    border:3px solid #303A40;
+    text-align: center;
+    border-radius: 5px;
+    transition: .2s ease-in-out;
+    &:hover{
+      color:$white;
+      background-color: #303A40;
+    }
+  }
+}
