@@ -1,0 +1,87 @@
+/* PORTEFOLIO
+ *
+ * /sass/object/lastproject.scss - NON Design of lastproject stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 09/05/2016
+ */
+
+.lastproject{
+  &::after{
+    content:"";
+    display: block;
+    clear: both;
+  }
+  &__title{
+    text-align: right;
+    margin-right: 9.5833em;
+  }
+  &__image{
+    margin-left:7em;
+    border-radius:7px;
+    float: left;
+  }
+  &__link{
+    position: relative;
+  }
+  &__link-text{
+    position: absolute;
+    left:-250px;
+    top:100px;
+    width:7em;
+  }
+  &__containerbutton{
+    width: 55%;
+    display: inline-block;
+    float:right;
+  }
+  &__button{
+    display:inline-block;
+    margin-top: 4.5em;
+    width: 15.111em;
+    height: 3.72em;
+    text-align: center;
+    margin-bottom: 8.3em;
+  }
+}
+@media screen and (max-width:1134px) {
+
+  .lastproject{
+    &__image{
+      margin-left:2em;
+      display: block;
+      text-align: center;
+    }
+  }
+}
+@media screen and (max-width:841px) {
+
+  .lastproject{
+    &__title{
+      text-align: center;
+      margin:0;
+    }
+    &__image{
+      display: block;
+      width: 50%;
+      height: auto;
+      margin: auto;
+    }
+    &__button{
+      display: block;
+      margin: auto;
+    }
+  }
+}
+@media screen and (max-width:562px) {
+
+  .lastproject{
+    &__image{
+      float: none;
+      width: 90%;
+      display: block;
+      height: auto;
+      margin: auto;
+    }
+}
+}

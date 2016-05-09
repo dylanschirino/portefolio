@@ -10,6 +10,7 @@
    background: url("../img/hey.png") no-repeat 80px bottom;
    &__title,&__subtitle{
      font:2.4em $montserratLight;
+     line-height: 1.5em;
    }
    &__button{
      font-size:1.8em;
@@ -24,4 +25,16 @@
        color: white;
      }
    }
+ }
+ @media screen and (max-width:700px) {
+
+   .guesswhat{
+     background: none;
+     &__title,&__subtitle{
+      text-align: center;
+      margin:1.5em 0 0 0;
+
+     }
+   }
+
  }

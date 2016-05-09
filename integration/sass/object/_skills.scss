@@ -17,7 +17,7 @@
     margin-right: 6.4em;
   }
   &__container{
-    width:33em;
+    width:33%;
     margin:1em 0 0 12.5em;
     &--left{
       float: left;
@@ -70,5 +70,47 @@
     width: 14.2em;
     height: 3.94em;
     margin:2em auto;
+  }
+}
+
+@media screen and (max-width:855px) {
+  .skills{
+    &__container{
+      width: 50%;
+      margin: auto;
+      float: none;
+    }
+  }
+}
+@media screen and (max-width:652px) {
+  .skills{
+    &__title{
+      text-align: center;
+      margin: 0;
+    }
+    &__container{
+      width: 50%;
+      margin: auto;
+      float: none;
+    }
+  }
+}
+@media screen and (max-width:572px) {
+  .skills{
+    &__container{
+      width:60%;
+      margin: auto;
+    }
+  }
+}
+@media screen and (max-width:413px) {
+  .skills{
+    &__container{
+      width:100%;
+      margin: auto;
+    }
+    &__label{
+      text-align: center;
+    }
   }
 }

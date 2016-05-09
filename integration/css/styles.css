@@ -185,7 +185,7 @@ a, abbr {
   margin-right: 6.4em; }
 
 .skills__container {
-  width: 33em;
+  width: 33%;
   margin: 1em 0 0 12.5em; }
   .skills__container--left {
     float: left; }
@@ -228,6 +228,103 @@ a, abbr {
   width: 14.2em;
   height: 3.94em;
   margin: 2em auto; }
+
+@media screen and (max-width: 855px) {
+  .skills__container {
+    width: 50%;
+    margin: auto;
+    float: none; } }
+
+@media screen and (max-width: 652px) {
+  .skills__title {
+    text-align: center;
+    margin: 0; }
+  .skills__container {
+    width: 50%;
+    margin: auto;
+    float: none; } }
+
+@media screen and (max-width: 572px) {
+  .skills__container {
+    width: 60%;
+    margin: auto; } }
+
+@media screen and (max-width: 413px) {
+  .skills__container {
+    width: 100%;
+    margin: auto; }
+  .skills__label {
+    text-align: center; } }
+
+/* PORTEFOLIO
+ *
+ * /sass/object/lastproject.scss - NON Design of lastproject stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 09/05/2016
+ */
+.lastproject::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.lastproject__title {
+  text-align: right;
+  margin-right: 9.5833em; }
+
+.lastproject__image {
+  margin-left: 7em;
+  border-radius: 7px;
+  float: left; }
+
+.lastproject__link {
+  position: relative; }
+
+.lastproject__link-text {
+  position: absolute;
+  left: -250px;
+  top: 100px;
+  width: 7em; }
+
+.lastproject__containerbutton {
+  width: 55%;
+  display: inline-block;
+  float: right; }
+
+.lastproject__button {
+  display: inline-block;
+  margin-top: 4.5em;
+  width: 15.111em;
+  height: 3.72em;
+  text-align: center;
+  margin-bottom: 8.3em; }
+
+@media screen and (max-width: 1134px) {
+  .lastproject__image {
+    margin-left: 2em;
+    display: block;
+    text-align: center; } }
+
+@media screen and (max-width: 841px) {
+  .lastproject__title {
+    text-align: center;
+    margin: 0; }
+  .lastproject__image {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: auto; }
+  .lastproject__button {
+    display: block;
+    margin: auto; } }
+
+@media screen and (max-width: 562px) {
+  .lastproject__image {
+    float: none;
+    width: 90%;
+    display: block;
+    height: auto;
+    margin: auto; } }
 
 /* PORTEFOLIO
 *
@@ -394,7 +491,8 @@ a, abbr {
 .guesswhat {
   background: url("../img/hey.png") no-repeat 80px bottom; }
   .guesswhat__title, .guesswhat__subtitle {
-    font: 2.4em "montserratlight", Helvetica Neue, Arial, sans-serif; }
+    font: 2.4em "montserratlight", Helvetica Neue, Arial, sans-serif;
+    line-height: 1.5em; }
   .guesswhat__button {
     font-size: 1.8em;
     line-height: 3.7em;
@@ -406,6 +504,13 @@ a, abbr {
     .guesswhat__button:hover {
       background-color: #303A40;
       color: white; }
+
+@media screen and (max-width: 700px) {
+  .guesswhat {
+    background: none; }
+    .guesswhat__title, .guesswhat__subtitle {
+      text-align: center;
+      margin: 1.5em 0 0 0; } }
 
 /* PORTEFOLIO
 *
@@ -462,5 +567,96 @@ a, abbr {
     .skills__button:hover {
       color: white;
       background-color: #303A40; }
+
+/* PORTEFOLIO
+*
+* /sass/components/lastproject.scss - Design of lastproject stylesheet
+*
+* coded by Dylan Schirino
+* started at 09/05/2016
+*/
+.lastproject {
+  background-color: #292E36;
+  color: #55D1A6; }
+  .lastproject__title {
+    font: 2.4em "montserratlight", Helvetica Neue, Arial, sans-serif;
+    line-height: 2.4em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-top: 3.125em; }
+    .lastproject__title::before {
+      content: "\e90f";
+      padding-right: 0.65em;
+      font: 2.4em "glyphs";
+      line-height: 2.4em;
+      vertical-align: middle; }
+  .lastproject__containerbutton::before, .lastproject__containerbutton::after {
+    content: "";
+    display: inline-block;
+    width: 25%;
+    height: 1px;
+    background: #53D1A7; }
+  .lastproject__button {
+    color: white;
+    font-size: 1.8em;
+    line-height: 3.8em;
+    text-transform: uppercase;
+    background-color: #53D1A7;
+    border-radius: 8px;
+    transition: .2s linear; }
+    .lastproject__button:hover {
+      background-color: white;
+      color: #53D1A7; }
+  .lastproject__link {
+    font-size: 1.8em;
+    text-transform: uppercase;
+    color: black; }
+    .lastproject__link:hover .lastproject__link-text {
+      opacity: 1;
+      z-index: 1; }
+  .lastproject__link-text {
+    opacity: 0;
+    transition: opacity .2s ease-in-out; }
+    .lastproject__link-text::before {
+      content: "\e908";
+      display: block;
+      font: 3em "glyphs";
+      padding-bottom: 0.63em;
+      text-align: center; }
+
+@media screen and (max-width: 1024px) {
+  .lastproject__containerbutton {
+    width: 50%;
+    margin: auto; }
+    .lastproject__containerbutton::before, .lastproject__containerbutton::after {
+      background: none; } }
+
+@media screen and (max-width: 562px) {
+  .lastproject__image {
+    float: none;
+    max-width: 90%;
+    height: auto;
+    margin: auto; }
+  .lastproject__link-text {
+    top: 60px;
+    left: 200px;
+    z-index: 1px; }
+  .lastproject__containerbutton {
+    display: block;
+    width: 100%;
+    margin: auto;
+    float: none; } }
+
+@media screen and (max-width: 428px) {
+  .lastproject__link-text {
+    top: 60px;
+    left: 150px; } }
+
+@media screen and (max-width: 336px) {
+  .lastproject__title::before {
+    padding: 0; }
+  .lastproject__link-text {
+    top: 60px;
+    left: 100px; } }
 
 /*# sourceMappingURL=styles.css.map */
