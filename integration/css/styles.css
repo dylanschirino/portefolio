@@ -328,6 +328,66 @@ a, abbr {
 
 /* PORTEFOLIO
 *
+* /sass/object/footer.scss - NON Design of footer stylesheet
+*
+* coded by Dylan Schirino
+* started at 09/05/2016
+*/
+.footer__container {
+  width: 40em;
+  margin: auto;
+  position: relative; }
+  .footer__container::after {
+    content: "";
+    display: block;
+    clear: both; }
+
+.footer__icon {
+  display: inline-block; }
+  .footer__icon--center {
+    position: absolute;
+    top: 8em;
+    left: 8.7em; }
+  .footer__icon--right {
+    float: right;
+    display: inline-block; }
+
+.footer__link::before {
+  display: block;
+  width: 1.65em;
+  height: 1.65em;
+  text-align: center;
+  margin: 0.925em 0 0.75em 0; }
+
+.footer__link--mail::before {
+  width: 2.1em;
+  height: 2.1em;
+  margin: 0 1.79em 0 1.79em; }
+
+@media screen and (max-width: 429px) {
+  .footer__container {
+    width: 90%;
+    margin: auto; }
+  .footer__icon--center {
+    left: 60px; } }
+
+@media screen and (max-width: 429px) {
+  .footer__container {
+    width: 90%;
+    margin: auto; }
+  .footer__icon--center {
+    left: 6em; } }
+
+@media screen and (max-width: 384px) {
+  .footer__icon--center {
+    left: 4em; } }
+
+@media screen and (max-width: 335px) {
+  .footer__icon--center {
+    left: 3em; } }
+
+/* PORTEFOLIO
+*
 * /sass/components/header.scss - Design of header stylesheet
 *
 * coded by Dylan Schirino
@@ -354,7 +414,8 @@ a, abbr {
   transition: .2s linear; }
   .menu__link:hover {
     color: black;
-    transform: rotate(-5deg); }
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg); }
   .menu__link--active::after {
     content: "";
     display: block;
@@ -370,7 +431,8 @@ a, abbr {
     .menu__element:hover, .menu__element:focus {
       color: black; }
   .menu__link:hover {
-    transform: none; }
+    -webkit-transform: none;
+            transform: none; }
   .menu__link--active::after {
     display: none; }
   .menu__burger {
@@ -384,7 +446,8 @@ a, abbr {
     top: 40px;
     left: 10px; }
   .menu__global {
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
     position: absolute;
     display: block;
     left: 0;
@@ -398,16 +461,20 @@ a, abbr {
     .menu__global--bottom {
       top: 28px; }
   .menu__global--top-click {
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
     top: 15px;
-    transform: rotate(50deg);
+    -webkit-transform: rotate(50deg);
+            transform: rotate(50deg);
     transition: 0.4s 0.4s; }
   .menu__global--middle-click {
     opacity: 0; }
   .menu__global--bottom-click {
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
     top: 15px;
-    transform: rotate(-410deg);
+    -webkit-transform: rotate(-410deg);
+            transform: rotate(-410deg);
     transition: 0.4s 0.4s; } }
 
 .mainimage {
@@ -422,7 +489,8 @@ a, abbr {
     display: inline-block;
     transition: .2s ease-in-out; }
     .mainimage__link:hover {
-      transform: translateY(10px); }
+      -webkit-transform: translateY(10px);
+              transform: translateY(10px); }
     .mainimage__link::after {
       font-family: "glyphs";
       font-size: 2.5em;
@@ -659,4 +727,30 @@ a, abbr {
     top: 60px;
     left: 100px; } }
 
+/* PORTEFOLIO
+*
+* /sass/components/footer.scss - Design of footer stylesheet
+*
+* coded by Dylan Schirino
+* started at 09/05/2016
+*/
+.footer {
+  background-color: #3B3B3B; }
+  .footer__link::before {
+    background-color: #4F575C;
+    color: white;
+    font: 4em/1.6 "glyphs";
+    border-radius: 8px;
+    border: 3px solid #131313; }
+  .footer__link--facebook::before {
+    content: "\e903"; }
+  .footer__link--github::before {
+    content: "\e904"; }
+  .footer__link--mail::before {
+    content: "\e90a";
+    line-height: 2em; }
+  .footer__link--linkedin::before {
+    content: "\e909"; }
+  .footer__link--phone::before {
+    content: "\e90b"; }
 /*# sourceMappingURL=styles.css.map */

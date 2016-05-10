@@ -1,0 +1,35 @@
+/* PORTEFOLIO
+*
+* /sass/components/footer.scss - Design of footer stylesheet
+*
+* coded by Dylan Schirino
+* started at 09/05/2016
+*/
+.footer{
+  background-color: #3B3B3B;
+  &__link{
+    &::before{
+      background-color: #4F575C;
+      color:white;
+      font:4em/1.6 $glyphsStack;
+      border-radius: 8px;
+      border:3px solid #131313;
+    }
+    &--facebook::before{
+      content:"\e903";
+    }
+    &--github::before{
+      content:"\e904";
+    }
+    &--mail::before{
+      content:"\e90a";
+      line-height: 2em;
+    }
+    &--linkedin::before{
+      content:"\e909";
+    }
+    &--phone::before{
+      content:"\e90b";
+    }
+  }
+}
