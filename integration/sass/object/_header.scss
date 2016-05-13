@@ -7,17 +7,11 @@
  */
  .header{
    height: 100vh;
-   &__title{
-     display: none;
-   }
  }
  .menu{
    &__list{
      width: 56.5em;
      margin-left: 8.7em;
-   }
-   &__title{
-     display: none;
    }
    &__element{
      display: inline-block;

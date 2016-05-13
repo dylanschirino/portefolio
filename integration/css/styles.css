@@ -26,8 +26,10 @@
   font-weight: normal;
   font-style: normal; }
 
-.visualhidden {
-  display: none; }
+.visualhidden, .listproject__title, .header__title, .menu__title {
+  position: absolute;
+  top: -9999px;
+  left: -9999px; }
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -88,15 +90,10 @@ a, abbr {
  */
 .header {
   height: 100vh; }
-  .header__title {
-    display: none; }
 
 .menu__list {
   width: 56.5em;
   margin-left: 8.7em; }
-
-.menu__title {
-  display: none; }
 
 .menu__element {
   display: inline-block;
@@ -328,6 +325,131 @@ a, abbr {
 
 /* PORTEFOLIO
 *
+* /sass/object/Project.scss - NON Design of Project stylesheet
+*
+* coded by Dylan Schirino
+* started at 13/05/2016
+*/
+.headerproject {
+  min-height: 100vh; }
+
+.introproject::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.introproject__title {
+  text-align: right;
+  margin-right: 5.85em;
+  margin-top: 2.1em;
+  float: right; }
+
+.introproject__text {
+  float: right;
+  display: inline-block;
+  width: 19.68em;
+  margin-right: 11.68em;
+  margin-top: 5em; }
+
+.introproject__image {
+  margin-top: 8em;
+  margin-left: 18.5em;
+  float: left; }
+
+/* MEDIAQUERIES FOR INTROPROJECT*/
+@media screen and (max-width: 1123px) {
+  .introproject__image {
+    margin-left: 2em; } }
+
+@media screen and (max-width: 957px) {
+  .introproject__text, .introproject__title {
+    margin-right: 2em; } }
+
+@media screen and (max-width: 803px) {
+  .introproject {
+    max-height: auto; }
+    .introproject__text, .introproject__title, .introproject__image {
+      float: none; }
+    .introproject__title {
+      margin-left: 0.5em;
+      text-align: center;
+      margin-bottom: 1em; }
+    .introproject__image {
+      margin-top: 2em;
+      margin: auto;
+      display: block;
+      text-align: center;
+      height: auto; }
+    .introproject__text {
+      display: block;
+      max-width: 90%;
+      margin: 3em auto;
+      padding-bottom: 3em; } }
+
+@media screen and (max-width: 450px) {
+  .introproject__image {
+    width: 90%;
+    margin-left: 0;
+    margin: auto;
+    height: auto; } }
+
+/**************************LISTPROJECT*********************************/
+.listproject {
+  width: 90em;
+  margin: auto; }
+  .listproject__time {
+    display: block;
+    text-align: left; }
+  .listproject__smallcards {
+    width: 90em; }
+    .listproject__smallcards::after {
+      content: "";
+      display: block;
+      clear: both; }
+  .listproject__container {
+    position: relative;
+    margin-top: 5.7em; }
+    .listproject__container:last-child {
+      margin-bottom: 4em; }
+    .listproject__container--left {
+      display: inline-block;
+      margin-right: 6em; }
+    .listproject__container--right {
+      display: inline-block;
+      margin-left: 6em; }
+  .listproject__content {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%);
+    left: 50%;
+    transform: translateX(-50%); }
+    .listproject__content--small {
+      position: absolute;
+      top: 20%; }
+
+/**************************MEDIAQUERIESLISTPROJECT*********************/
+@media screen and (max-width: 913px) {
+  .listproject {
+    width: 90%;
+    height: auto;
+    margin: 0;
+    margin: 1em auto; }
+    .listproject__smallcards, .listproject__link, .listproject__image, .listproject__container {
+      width: 100%;
+      height: auto;
+      margin: 0;
+      margin: 1em auto; }
+    .listproject__content--small {
+      position: absolute;
+      top: 40%; } }
+
+@media screen and (max-width: 471px) {
+  .listproject__content {
+    position: absolute;
+    top: 15%; } }
+
+/* PORTEFOLIO
+*
 * /sass/object/footer.scss - NON Design of footer stylesheet
 *
 * coded by Dylan Schirino
@@ -414,8 +536,7 @@ a, abbr {
   transition: .2s linear; }
   .menu__link:hover {
     color: black;
-    -webkit-transform: rotate(-5deg);
-            transform: rotate(-5deg); }
+    transform: rotate(-5deg); }
   .menu__link--active::after {
     content: "";
     display: block;
@@ -431,8 +552,7 @@ a, abbr {
     .menu__element:hover, .menu__element:focus {
       color: black; }
   .menu__link:hover {
-    -webkit-transform: none;
-            transform: none; }
+    transform: none; }
   .menu__link--active::after {
     display: none; }
   .menu__burger {
@@ -446,8 +566,7 @@ a, abbr {
     top: 40px;
     left: 10px; }
   .menu__global {
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
+    backface-visibility: hidden;
     position: absolute;
     display: block;
     left: 0;
@@ -461,20 +580,16 @@ a, abbr {
     .menu__global--bottom {
       top: 28px; }
   .menu__global--top-click {
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
+    backface-visibility: hidden;
     top: 15px;
-    -webkit-transform: rotate(50deg);
-            transform: rotate(50deg);
+    transform: rotate(50deg);
     transition: 0.4s 0.4s; }
   .menu__global--middle-click {
     opacity: 0; }
   .menu__global--bottom-click {
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
+    backface-visibility: hidden;
     top: 15px;
-    -webkit-transform: rotate(-410deg);
-            transform: rotate(-410deg);
+    transform: rotate(-410deg);
     transition: 0.4s 0.4s; } }
 
 .mainimage {
@@ -489,8 +604,7 @@ a, abbr {
     display: inline-block;
     transition: .2s ease-in-out; }
     .mainimage__link:hover {
-      -webkit-transform: translateY(10px);
-              transform: translateY(10px); }
+      transform: translateY(10px); }
     .mainimage__link::after {
       font-family: "glyphs";
       font-size: 2.5em;
@@ -523,7 +637,7 @@ a, abbr {
 
 .presentation__text {
   font: 1.4em/1.7em "montserratlight", Helvetica Neue, Arial, sans-serif;
-  text-align: center;
+  text-align: left;
   padding-bottom: 4.1428571em; }
   .presentation__text--left::before, .presentation__text--right::before {
     content: "\e90d";
@@ -729,6 +843,70 @@ a, abbr {
 
 /* PORTEFOLIO
 *
+* /sass/components/Project.scss - Design of Project stylesheet
+*
+* coded by Dylan Schirino
+* started at 13/05/2016
+*/
+.headerproject {
+  background-color: #303A40; }
+
+.introproject {
+  color: white; }
+  .introproject__title {
+    font: 4em "montserratlight", Helvetica Neue, Arial, sans-serif;
+    letter-spacing: 0.111em;
+    /*4.44px*/
+    text-transform: uppercase; }
+    .introproject__title::before {
+      content: "\e907";
+      font: 1.5em "glyphs";
+      color: #04BA78; }
+  .introproject__text {
+    font: 1.6em/1.8em "montserratlight", Helvetica Neue, Arial, sans-serif; }
+
+.listproject__link {
+  font: 1.3em "montserratlight", Helvetica Neue, Arial, sans-serif;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: white;
+  position: relative;
+  display: inline-block; }
+  .listproject__link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    border-radius: 16px;
+    height: 99%;
+    top: 0;
+    left: 0;
+    background: rgba(41, 89, 112, 0.8);
+    opacity: 0;
+    transition: all .2s; }
+  .listproject__link:hover:after {
+    opacity: 1; }
+  .listproject__link:hover .listproject__content {
+    opacity: 1;
+    z-index: 1; }
+
+.listproject__content {
+  opacity: 0;
+  transition: opacity .2s ease-in-out; }
+
+.listproject__info {
+  text-align: center; }
+  .listproject__info::before {
+    content: "\e910";
+    display: block;
+    font: 5em "glyphs";
+    padding-bottom: 0.3em; }
+
+@media screen and (max-width: 913px) {
+  .listproject__link::after {
+    height: 96%; } }
+
+/* PORTEFOLIO
+*
 * /sass/components/footer.scss - Design of footer stylesheet
 *
 * coded by Dylan Schirino
@@ -753,4 +931,5 @@ a, abbr {
     content: "\e909"; }
   .footer__link--phone::before {
     content: "\e90b"; }
+
 /*# sourceMappingURL=styles.css.map */

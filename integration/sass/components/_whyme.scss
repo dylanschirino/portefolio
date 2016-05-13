@@ -29,7 +29,7 @@
 .presentation{
   &__text{
     font:1.4em/1.7em $montserratLight;
-    text-align: center;
+    text-align:left;
     padding-bottom: 4.1428571em;
     &--left::before,&--right::before{
       content:"\e90d";

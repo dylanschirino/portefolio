@@ -1,0 +1,78 @@
+/* PORTEFOLIO
+*
+* /sass/components/Project.scss - Design of Project stylesheet
+*
+* coded by Dylan Schirino
+* started at 13/05/2016
+*/
+.headerproject{
+  background-color: $blueGray;
+}
+
+.introproject{
+  color:$white;
+  &__title{
+    font: 4em $montserratLight;
+    letter-spacing:0.111em; /*4.44px*/
+    text-transform: uppercase;
+    &::before{
+      content:"\e907";
+      font:1.5em $glyphsStack;
+      color:$greenLight;
+    }
+  }
+  &__text{
+    font:1.6em/1.8em $montserratLight;
+  }
+}
+
+.listproject{
+  &__link{
+    font:1.3em $montserratLight;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color:$white;
+    position: relative;
+    display:inline-block;
+    &::after{
+      content:'';
+      position:absolute;
+      width:100%;
+      border-radius: 16px;
+      height:99%;
+      top:0;
+      left:0;
+      background:rgba(#295970,0.8);
+      opacity:0;
+      transition: all .2s;
+    }
+    &:hover:after{
+      opacity: 1;
+    }
+    &:hover .listproject__content{
+      opacity: 1;
+      z-index: 1;
+    }
+  }
+  &__content{
+    opacity: 0;
+    transition:opacity .2s ease-in-out;
+  }
+  &__info{
+    text-align: center;
+
+    &::before{
+      content:"\e910";
+      display: block;
+      font: 5em $glyphsStack;
+      padding-bottom:0.3em;
+    }
+  }
+}
+@media screen and (max-width:913px) {
+  .listproject{
+    &__link::after{
+      height:96%;
+    }
+  }
+}

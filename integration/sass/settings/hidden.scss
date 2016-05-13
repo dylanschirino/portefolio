@@ -1,5 +1,7 @@
 
 
-.visualhidden{
-  display:none;
+.visualhidden,.listproject__title,.header__title,.menu__title{
+  position: absolute;
+  top:-9999px;
+  left:-9999px;
 }
