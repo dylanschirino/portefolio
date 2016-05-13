@@ -26,7 +26,7 @@
   font-weight: normal;
   font-style: normal; }
 
-.visualhidden, .listproject__title, .header__title, .menu__title {
+.visualhidden, .listproject__title, .header__title, .menu__title, .project-info__title {
   position: absolute;
   top: -9999px;
   left: -9999px; }
@@ -80,6 +80,9 @@ html {
 
 a, abbr {
   text-decoration: none; }
+
+p {
+  font-family: "montserratlight", Helvetica Neue, Arial, sans-serif; }
 
 /* PORTEFOLIO
  *
@@ -447,6 +450,61 @@ a, abbr {
   .listproject__content {
     position: absolute;
     top: 15%; } }
+
+/* PORTEFOLIO
+*
+* /sass/object/viewproject.scss - NON Design of viewproject stylesheet
+*
+* coded by Dylan Schirino
+* started at 13/05/2016
+*/
+.view-project__title {
+  margin: 2.6588em 0 1.944em 3.38em; }
+
+.view-project__image {
+  display: block;
+  margin: auto; }
+
+.project-desc::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.project-desc__container {
+  margin-left: 12.4em;
+  float: left; }
+
+.project-desc__title {
+  margin-bottom: 0.953em; }
+
+.project-desc__text {
+  width: 31.25em;
+  margin-bottom: 2.825em; }
+
+.project-desc__button {
+  display: block;
+  width: 20.6em;
+  height: 3.78em;
+  margin-bottom: 2em; }
+
+.project-desc__image {
+  margin-top: 4.1em;
+  float: right; }
+
+.palette {
+  width: 90em;
+  margin: auto; }
+  .palette::after {
+    content: "";
+    display: block;
+    clear: both; }
+  .palette__title {
+    margin: 3.33em 0 3.3em 2em;
+    float: left; }
+  .palette__list {
+    float: right;
+    width: 20em;
+    margin: 7.5em 0; }
 
 /* PORTEFOLIO
 *
@@ -904,6 +962,73 @@ a, abbr {
 @media screen and (max-width: 913px) {
   .listproject__link::after {
     height: 96%; } }
+
+/* PORTEFOLIO
+ *
+ * /sass/components/viewproject.scss - NON Design of viewproject stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 13/05/2016
+ */
+.view-project__title {
+  font: 3.6em "montserratlight", Helvetica Neue, Arial, sans-serif;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: white; }
+
+.project-desc {
+  color: white;
+  background-color: #44B19C; }
+  .project-desc__title {
+    font: 2.4em/2em "montserratlight", Helvetica Neue, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3.3px;
+    padding-top: 1.75em; }
+  .project-desc__text {
+    font-size: 1.6em;
+    line-height: 1.5em; }
+  .project-desc__button {
+    font-size: 1.8em;
+    line-height: 3.78em;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.15px;
+    border: 4px solid #424040;
+    text-align: center;
+    transition: .3s ease-in-out; }
+    .project-desc__button:hover {
+      background-color: #424040;
+      border: 4px solid white; }
+
+.palette__title {
+  font-size: 2.4em;
+  text-transform: uppercase;
+  letter-spacing: 1.53px;
+  color: #303A40; }
+
+.palette__color {
+  display: inline-block;
+  height: 2.5em;
+  width: 6.4em;
+  border-radius: 12.5px;
+  margin-left: -2em;
+  margin-top: -0.5em; }
+  .palette__color--un {
+    background-color: #DF5A48; }
+  .palette__color--deux {
+    background-color: #8359AA; }
+  .palette__color--trois {
+    background-color: #334D5C; }
+  .palette__color--quatre {
+    background-color: #45B29D; }
+  .palette__color--cinq {
+    background-color: #E27A3F; }
+  .palette__color--six {
+    background-color: #3E83B4; }
+  .palette__color--sept {
+    background-color: white; }
+  .palette__color--huit {
+    background-color: #A52934; }
 
 /* PORTEFOLIO
 *

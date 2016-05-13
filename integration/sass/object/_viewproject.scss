@@ -1,0 +1,64 @@
+/* PORTEFOLIO
+*
+* /sass/object/viewproject.scss - NON Design of viewproject stylesheet
+*
+* coded by Dylan Schirino
+* started at 13/05/2016
+*/
+.view-project{
+  &__title{
+    margin:2.6588em 0 1.944em 3.38em;
+  }
+  &__image{
+    display: block;
+    margin:auto;
+  }
+}
+
+.project-desc{
+  &::after{
+    content:"";
+    display: block;
+    clear: both;
+  }
+  &__container{
+    margin-left:12.4em;
+    float: left;
+  }
+  &__title{
+    margin-bottom:0.953em;
+  }
+  &__text{
+    width: 31.25em;
+    margin-bottom: 2.825em;
+  }
+  &__button{
+    display: block;
+    width: 20.6em;
+    height: 3.78em;
+    margin-bottom: 2em;
+  }
+  &__image{
+    margin-top: 4.1em;
+    float: right;
+  }
+}
+
+.palette{
+  width: 90em;
+  margin: auto;
+  &::after{
+    content:"";
+    display: block;
+    clear: both;
+  }
+  &__title{
+    margin:3.33em 0 3.3em 2em;
+    float: left;
+  }
+  &__list{
+    float: right;
+    width: 20em;
+    margin: 7.5em 0;
+  }
+}
