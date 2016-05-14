@@ -465,6 +465,15 @@ p {
   display: block;
   margin: auto; }
 
+@media screen and (max-width: 859px) {
+  .view-project__title {
+    margin: 3em 0;
+    text-align: center; }
+  .view-project__image {
+    width: 90%;
+    height: auto;
+    margin: auto; } }
+
 .project-desc::after {
   content: "";
   display: block;
@@ -491,8 +500,33 @@ p {
   margin-top: 4.1em;
   float: right; }
 
+@media screen and (max-width: 1043px) {
+  .project-desc__container {
+    margin-left: 3em; } }
+
+@media screen and (max-width: 949px) {
+  .project-desc__title {
+    text-align: center; }
+  .project-desc__text {
+    float: none;
+    width: 80%;
+    margin: auto; }
+  .project-desc__button {
+    width: 80%;
+    margin: 3em auto; }
+  .project-desc__image {
+    float: none;
+    display: block;
+    margin: auto; } }
+
+@media screen and (max-width: 422px) {
+  .project-desc__image {
+    width: 90%;
+    height: auto;
+    margin: auto; } }
+
 .palette {
-  width: 90em;
+  width: 81.4%;
   margin: auto; }
   .palette::after {
     content: "";
@@ -503,8 +537,105 @@ p {
     float: left; }
   .palette__list {
     float: right;
-    width: 20em;
+    width: 19.4%;
     margin: 7.5em 0; }
+
+@media screen and (max-width: 756px) {
+  .palette {
+    width: 80%;
+    margin: auto; }
+    .palette__title {
+      float: none;
+      text-align: center;
+      margin: 2.3em 0;
+      display: block; }
+    .palette__list {
+      float: none;
+      width: 70%;
+      height: auto;
+      text-align: center;
+      margin: 1em auto; } }
+
+.project-info::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.project-info__design {
+  margin-left: 12.5em; }
+  .project-info__design::after {
+    content: "";
+    display: block;
+    clear: both; }
+
+.project-info__time {
+  width: 39em;
+  margin: auto;
+  margin-top: 7.3em; }
+
+@media screen and (max-width: 1136px) {
+  .project-info__design {
+    margin-left: 2em; } }
+
+.design__container {
+  display: inline-block;
+  width: 53em;
+  float: left; }
+  .design__container--contrainte {
+    float: right;
+    margin-right: 8em; }
+
+.design__imagecontainer {
+  display: inline-block;
+  margin-top: 24.1em;
+  margin-left: 5.9em; }
+  .design__imagecontainer--contrainte {
+    margin-top: 0;
+    margin: 0; }
+
+.design__imagecontrainte {
+  display: block;
+  margin-top: 3.2em; }
+
+.design__text {
+  margin-bottom: 3.3125em; }
+
+@media screen and (max-width: 1049px) {
+  .design__container {
+    display: block;
+    float: none;
+    width: 60%;
+    margin: auto; }
+  .design__imagecontainer {
+    margin: 0;
+    display: block;
+    text-align: center;
+    margin: 2em auto; }
+  .design__imagecontrainte {
+    margin: 2em auto;
+    display: block;
+    text-align: center; } }
+
+.time__list {
+  text-align: center; }
+
+.time__element {
+  display: inline-block;
+  text-align: center; }
+
+@media screen and (max-width: 524px) {
+  .design__container {
+    display: block;
+    float: none;
+    width: 90%;
+    margin: auto; }
+  .design__image, .design__imagecontrainte {
+    width: 90%;
+    height: auto;
+    margin: 2em auto; }
+  .project-info__time {
+    width: 90%;
+    margin: auto; } }
 
 /* PORTEFOLIO
 *
@@ -1029,6 +1160,52 @@ p {
     background-color: white; }
   .palette__color--huit {
     background-color: #A52934; }
+
+.project-info {
+  background-color: #F2F2F2;
+  padding-bottom: 7.1em; }
+  .project-info__time {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black; }
+
+.design__title {
+  font: 2.4em "montserratlight", Helvetica Neue, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2.63px;
+  display: inline-block;
+  padding: 4em 0 2.29em 0; }
+  .design__title::before {
+    content: "\e901";
+    display: block;
+    font: 1.5em "glyphs";
+    padding-bottom: 0.18em;
+    text-align: center;
+    color: #04BA78; }
+
+.design__text {
+  font-size: 1.6em;
+  line-height: 1.6em; }
+
+.time__title {
+  font: 1.6em/1.6em "montserratlight", Helvetica Neue, Arial, sans-serif;
+  text-align: center;
+  padding: 1.6525em 0; }
+
+.time__subtitle {
+  font-size: 1.3em;
+  text-align: center; }
+
+.time__element {
+  padding: 2.5em 2.1em 3.9em 0; }
+  .time__element::before {
+    content: "\e902";
+    display: block;
+    font: 3em "glyphs";
+    color: #4E6482; }
+
+@media screen and (max-width: 347px) {
+  .time__element {
+    padding: 2.5em 0.6em 3.9em; } }
 
 /* PORTEFOLIO
 *

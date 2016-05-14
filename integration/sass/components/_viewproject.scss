@@ -83,3 +83,62 @@
     }
   }
 }
+
+.project-info{
+  background-color: #F2F2F2;
+  padding-bottom: 7.1em;
+  &__time{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+}
+
+.design{
+  &__title{
+    font: 2.4em $montserratLight;
+    text-transform: uppercase;
+    letter-spacing: 2.63px;
+    display: inline-block;
+    padding:4em 0 2.29em 0;
+    &::before{
+      content:"\e901";
+      display: block;
+      font: 1.5em $glyphsStack;
+      padding-bottom: 0.18em;
+      text-align: center;
+      color:$greenLight;
+    }
+  }
+  &__text{
+    font-size: 1.6em;
+    line-height: 1.6em;
+  }
+}
+
+.time{
+  &__title{
+    font:1.6em/1.6em $montserratLight;
+    text-align: center;
+    padding: 1.6525em 0;
+  }
+  &__subtitle{
+    font-size: 1.3em;
+    text-align: center;
+  }
+  &__element{
+    padding: 2.5em 2.1em 3.9em 0;
+    &::before{
+      content:"\e902";
+      display: block;
+      font: 3em $glyphsStack;
+      color:$blue;
+    }
+  }
+}
+@media screen and (max-width:347px) {
+  .time{
+    &__element{
+      padding:2.5em 0.6em 3.9em;
+    }
+  }
+}
