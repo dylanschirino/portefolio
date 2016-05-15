@@ -703,6 +703,75 @@ p {
     margin: 2em 0; } }
 
 /* PORTEFOLIO
+ *
+ * /sass/object/about.scss - NON Design of about stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 15/05/2016
+ */
+.about {
+  width: 50%;
+  display: inline-block; }
+  .about__container {
+    margin-left: 12.5em;
+    margin-bottom: 8.5em; }
+  .about__text {
+    width: 80%; }
+
+.canvas {
+  display: inline-block;
+  min-width: 58em;
+  float: right; }
+  .canvas::after {
+    content: "";
+    display: block;
+    clear: both; }
+  .canvas__image {
+    margin-top: 5em;
+    margin-left: 2em;
+    position: absolute; }
+
+.draw {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+@media screen and (max-width: 1176px) {
+  .about {
+    width: 40%;
+    margin: auto; }
+    .about__container {
+      display: block;
+      width: 80%;
+      margin: auto; }
+    .about__text {
+      width: 100%;
+      margin: auto; } }
+
+@media screen and (max-width: 982px) {
+  .about {
+    width: 30%;
+    margin: auto; }
+    .about__title::after {
+      float: none;
+      text-align: center;
+      display: block; } }
+
+@media screen and (max-width: 852px) {
+  .about {
+    display: block;
+    width: 80%;
+    margin: auto; }
+    .about__container {
+      width: 80%;
+      margin: auto; }
+  .canvas {
+    float: none;
+    display: none;
+    width: 80%;
+    margin: auto; } }
+
+/* PORTEFOLIO
 *
 * /sass/object/footer.scss - NON Design of footer stylesheet
 *
@@ -1394,6 +1463,37 @@ p {
 .contact-form__input:focus + .contact-form__label, .contact-form__input[value]:not([value=""]) + .contact-form__label {
   bottom: 60px;
   color: #a5a5a5; }
+
+/* PORTEFOLIO
+ *
+ * /sass/components/about.scss - Design of about stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 15/05/2016
+ */
+.headerabout {
+  background-color: #303A40;
+  padding-bottom: 4em; }
+
+.about {
+  background-color: white;
+  color: #3A3A3A; }
+  .about__title {
+    font: 3em "montserratlight", Helvetica Neue, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2.46px;
+    padding: 1.5em 0 2.3em 0; }
+    .about__title::after {
+      content: "\e906";
+      font: 1.5em "glyphs";
+      float: right; }
+  .about__text {
+    font-size: 1.6em;
+    line-height: 1.6em;
+    padding-bottom: 1.625em; }
+
+.draw {
+  background-color: #303A40; }
 
 /* PORTEFOLIO
 *

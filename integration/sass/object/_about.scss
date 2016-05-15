@@ -1,0 +1,84 @@
+/* PORTEFOLIO
+ *
+ * /sass/object/about.scss - NON Design of about stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 15/05/2016
+ */
+.about{
+  width:50%;
+  display: inline-block;
+  &__container{
+    margin-left: 12.5em;
+    margin-bottom: 8.5em;
+  }
+  &__text{
+    width:80%;
+  }
+}
+.canvas{
+  display: inline-block;
+  min-width:58em;
+  float:right;
+  &::after{
+    content:"";
+    display: block;
+    clear: both;
+  }
+  &__image{
+    margin-top:5em;
+    margin-left:2em;
+    position: absolute;
+  }
+}
+.draw{
+  display: block;
+  width: 100%;
+  height:auto;
+}
+@media screen and (max-width:1176px) {
+    .about{
+      width:40%;
+      margin: auto;
+      &__container{
+        display: block;
+        width: 80%;
+        margin: auto;
+      }
+      &__text{
+        width:100%;
+        margin: auto;
+      }
+    }
+}
+@media screen and (max-width:982px) {
+  .about{
+    width: 30%;
+    margin: auto;
+    &__title{
+      &::after{
+        float:none;
+        text-align: center;
+        display: block;
+      }
+    }
+  }
+}
+@media screen and (max-width:852px) {
+  .about{
+    display: block;
+    width: 80%;
+    margin: auto;
+    &__container{
+      width:80%;
+      margin: auto;
+    }
+  }
+  .canvas{
+    float:none;
+    display:none;
+    width: 80%;
+    margin: auto;
+  }
+
+}
