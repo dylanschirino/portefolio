@@ -638,6 +638,71 @@ p {
     margin: auto; } }
 
 /* PORTEFOLIO
+ *
+ * /sass/object/contact.scss - NON Design of contact stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 14/05/2016
+ */
+.contact::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.contact__title {
+  margin: 2.03em 0 1.8em 0; }
+
+.contact__container {
+  display: inline-block;
+  margin-left: 7.9em;
+  width: 36%; }
+
+.contact-form {
+  float: right;
+  width: 28.71%;
+  margin: 8.1em 8.1em 0 0;
+  display: inline-block; }
+  .contact-form__input {
+    display: block;
+    min-height: 5em;
+    padding-left: 8px;
+    width: 80%; }
+    .contact-form__input--textarea {
+      margin: 1em 0;
+      width: 90%; }
+  .contact-form__label--textarea {
+    margin-top: 1em;
+    position: static;
+    top: 0;
+    left: 0; }
+  .contact-form__submit {
+    width: 10.92em;
+    height: 3.57em;
+    margin: 3.14em 0; }
+
+@media screen and (max-width: 1111px) {
+  .contact__container {
+    margin-left: 4em; }
+  .contact-form {
+    margin-right: 2em; } }
+
+@media screen and (max-width: 807px) {
+  .contact__container {
+    display: block;
+    width: 80%;
+    margin: auto; }
+  .contact-form {
+    float: none;
+    display: block;
+    width: 80%;
+    margin: auto; } }
+
+@media screen and (max-width: 363px) {
+  .contact__title {
+    text-align: center;
+    margin: 2em 0; } }
+
+/* PORTEFOLIO
 *
 * /sass/object/footer.scss - NON Design of footer stylesheet
 *
@@ -1206,6 +1271,129 @@ p {
 @media screen and (max-width: 347px) {
   .time__element {
     padding: 2.5em 0.6em 3.9em; } }
+
+/* PORTEFOLIO
+ *
+ * /sass/components/contact.scss - Design of contact stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 14/05/2016
+ */
+.contactbody {
+  background: rgba(9, 20, 27, 0.75) url("../img/barre.png") no-repeat center 400px; }
+
+@media screen and (max-width: 803px) {
+  .contactbody {
+    background-position: right 400px; } }
+
+.contact {
+  color: white; }
+  .contact::after {
+    content: "";
+    display: block;
+    clear: both; }
+  .contact__title {
+    font: 3em "montserratlight", Helvetica Neue, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2.46px; }
+  .contact__container::before {
+    content: "";
+    float: right;
+    margin-top: 7em;
+    display: block;
+    width: 2px;
+    height: 40em;
+    background: white;
+    transform: skewX(-15deg); }
+  .contact__element {
+    font: 1.8em "montserratlight", Helvetica Neue, Arial, sans-serif;
+    padding-bottom: 4em;
+    transition: .2s ease-in-out; }
+    .contact__element:hover {
+      transform: translateY(-3px); }
+  .contact__link {
+    color: white; }
+    .contact__link::before {
+      font: 2em "glyphs";
+      padding-right: 1.5em;
+      color: #04BA78; }
+    .contact__link--mail::before {
+      content: "\e90a"; }
+    .contact__link--phone::before {
+      content: "\e90b";
+      font-size: 2.5em; }
+    .contact__link--github::before {
+      content: "\e904";
+      font-size: 2.5em; }
+
+@media screen and (max-width: 920px) {
+  .contact__container::before {
+    float: none;
+    height: 0;
+    background: none; } }
+
+@media screen and (max-width: 580px) {
+  .contactbody {
+    background-image: none; }
+  .contact__element {
+    width: 100%;
+    margin: auto; }
+  .contact__link {
+    width: 80%;
+    margin: auto; }
+    .contact__link::before {
+      padding: 0 0.4em 0 0; } }
+
+.contact-form__title, .contact-form__subtitle {
+  font-size: 1.5em;
+  padding-bottom: 1.3em; }
+
+.contact-form__subtitle {
+  text-align: right; }
+
+.contact-form__legend {
+  font: 1.4em "montserratlight", Helvetica Neue, Arial, sans-serif;
+  letter-spacing: 1.31px; }
+
+.contact-form__input {
+  border: none;
+  -webkit-appareance: none;
+  background: none;
+  border-bottom: 1px solid white;
+  padding-top: 1em;
+  color: white;
+  font-size: 1.4em; }
+  .contact-form__input--textarea {
+    border: 1px solid white;
+    font: 1.4em "montserratlight", Helvetica Neue, Arial, sans-serif; }
+
+.contact-form__label {
+  display: block;
+  color: white;
+  font-size: 1.2em;
+  position: relative;
+  bottom: 15px;
+  left: 5px;
+  transition: .2s ease-in-out; }
+
+.contact-form__submit {
+  -webkit-appareance: none;
+  border: none;
+  background: none;
+  border: 4px solid #00BA7A;
+  font: 1.4em "montserratlight", Helvetica Neue, Arial, sans-serif;
+  letter-spacing: 1.35px;
+  text-transform: uppercase;
+  color: white;
+  transition: .3s ease-in-out; }
+  .contact-form__submit:hover {
+    background-color: #00BA7A;
+    border: 4px solid white;
+    cursor: pointer; }
+
+.contact-form__input:focus + .contact-form__label, .contact-form__input[value]:not([value=""]) + .contact-form__label {
+  bottom: 60px;
+  color: #a5a5a5; }
 
 /* PORTEFOLIO
 *
