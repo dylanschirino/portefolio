@@ -7,89 +7,15 @@
 */
 
 .footer{
-  &__container{
-    width: 40em;
-    margin: auto;
-    position: relative;
-    &::after{
-      content:"";
-      display: block;
-      clear: both;
-    }
-  }
-  &__icon{
-    display: inline-block;
-    &--center{
-      position:absolute;
-      top:8em;
-      left: 8.7em;
-    }
-    &--right{
-      float: right;
-      display: inline-block;
-    }
-  }
+  text-align: center;
   &__link{
+    display: inline-block;
     &::before{
-      display: block;
-      width:1.65em;
-      height:1.65em;
+      display:block;
       text-align: center;
-      margin:0.925em 0 0.75em 0;
-    }
-    &--mail::before{
-      width: 2.1em;
-      height: 2.1em;
-      margin: 0 1.79em 0 1.79em;
     }
   }
-}
-
-@media screen and (max-width:429px) {
-
-  .footer{
-    &__container{
-      width: 90%;
-      margin: auto;
-    }
-    &__icon{
-      &--center{
-        left: 60px;
-      }
-    }
-  }
-}
-
-@media screen and (max-width:429px) {
-
-  .footer{
-    &__container{
-      width: 90%;
-      margin: auto;
-    }
-    &__icon{
-      &--center{
-        left: 6em;
-      }
-    }
-  }
-}
-@media screen and (max-width:384px) {
-
-  .footer{
-    &__icon{
-      &--center{
-        left:4em;
-      }
-    }
-  }
-}
-@media screen and (max-width:335px) {
-  .footer{
-    &__icon{
-      &--center{
-        left:3em;
-      }
-    }
+  &__subfooter{
+    height: 3.7em;
   }
 }

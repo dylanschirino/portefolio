@@ -6,24 +6,20 @@
 * started at 09/05/2016
 */
 .footer{
-  background-color: #3B3B3B;
+  background-color:#D8D8D8;
   &__link{
+    font: 1.2em $montserratLight;
+    padding:1.7em 2.5em 1.7em 0;
+    color:#303A40;
     &::before{
-      background-color: #4F575C;
-      color:white;
-      font:4em/1.6 $glyphsStack;
-      border-radius: 8px;
-      border:3px solid #131313;
+      color:#303A40;
+      font:2.8em/1.5em $glyphsStack;
     }
     &--facebook::before{
       content:"\e903";
     }
     &--github::before{
       content:"\e904";
-    }
-    &--mail::before{
-      content:"\e90a";
-      line-height: 2em;
     }
     &--linkedin::before{
       content:"\e909";
@@ -32,4 +28,20 @@
       content:"\e90b";
     }
   }
+  &__subfooter{
+    background-color: #303A40;
+  }
+}
+.subfooter{
+  &__text{
+    font:1.1em/3.3em $montserratLight;
+    color:$white;
+  }
+}
+@media screen and (max-width:755px) {
+    .footer{
+      &__link{
+        padding-right:1em;
+      }
+    }
 }
