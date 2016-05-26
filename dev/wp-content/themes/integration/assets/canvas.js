@@ -9,15 +9,10 @@ $(function() {
     ctx.fillStyle = color;
     ctx.lineWidth = 0.2;
     ctx.strokeStyle = color;
-    var oImage = new Image();
-    oImage.addEventListener("load",function(){
-      ctx.drawImage(this,290,220);//self represente oApp et this dans la fonction represente l'image
-    } ); //on ajoute un écouteur d'évenement pour voir quand l'image sera charger
-    oImage.src ="../img/rocket.svg";
     var dots = {
         nb: 300,
         distance: 50,
-        d_radius:1,
+        d_radius:0.2,
         array: []
     };
 

@@ -730,7 +730,7 @@ p {
     content: "";
     display: block;
     clear: both; }
-  .canvas__image {
+  .canvas img {
     margin-top: 5em;
     margin-left: 2em;
     position: absolute; }
