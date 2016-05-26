@@ -666,20 +666,20 @@ p {
   width: 28.71%;
   margin: 8.1em 8.1em 0 0;
   display: inline-block; }
-  .contact-form__input {
+  .contact-form input {
     display: block;
     min-height: 5em;
     padding-left: 8px;
     width: 80%; }
-    .contact-form__input--textarea {
-      margin: 1em 0;
-      width: 90%; }
+  .contact-form textarea {
+    margin: 1em 0;
+    width: 80%; }
   .contact-form__label--textarea {
     margin-top: 1em;
     position: static;
     top: 0;
     left: 0; }
-  .contact-form__submit {
+  .contact-form input[type="submit"] {
     width: 10.92em;
     height: 3.57em;
     margin: 3.14em 0; }
@@ -1354,7 +1354,7 @@ p {
   font: 1.4em "montserratlight", Helvetica Neue, Arial, sans-serif;
   letter-spacing: 1.31px; }
 
-.contact-form__input {
+.contact-form input, .contact-form textarea {
   border: none;
   -webkit-appareance: none;
   background: none;
@@ -1362,11 +1362,12 @@ p {
   padding-top: 1em;
   color: white;
   font-size: 1.4em; }
-  .contact-form__input--textarea {
-    border: 1px solid white;
-    font: 1.4em "montserratlight", Helvetica Neue, Arial, sans-serif; }
 
-.contact-form__label {
+.contact-form textarea {
+  border: 1px solid white;
+  font: 1.4em "montserratlight", Helvetica Neue, Arial, sans-serif; }
+
+.contact-form label {
   display: block;
   color: white;
   font-size: 1.2em;
@@ -1375,7 +1376,7 @@ p {
   left: 5px;
   transition: .2s ease-in-out; }
 
-.contact-form__submit {
+.contact-form input[type="submit"] {
   -webkit-appareance: none;
   border: none;
   background: none;
@@ -1384,13 +1385,14 @@ p {
   letter-spacing: 1.35px;
   text-transform: uppercase;
   color: white;
-  transition: .3s ease-in-out; }
-  .contact-form__submit:hover {
+  transition: .3s ease-in-out;
+  padding: 0; }
+  .contact-form input[type="submit"]:hover {
     background-color: #00BA7A;
     border: 4px solid white;
     cursor: pointer; }
 
-.contact-form__input:focus + .contact-form__label, .contact-form__input[value]:not([value=""]) + .contact-form__label {
+input:focus + label, input[value]:not([value=""]) + label {
   bottom: 60px;
   color: #a5a5a5; }
 

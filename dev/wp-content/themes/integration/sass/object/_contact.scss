@@ -27,15 +27,15 @@
     width: 28.71%;
     margin:8.1em 8.1em 0 0;
     display: inline-block;
-    &__input{
+    & input{
       display: block;
       min-height:5em;
       padding-left:8px;
       width:80%;
-      &--textarea{
-        margin: 1em 0;
-        width: 90%;
-      }
+    }
+    & textarea{
+      margin: 1em 0;
+      width: 80%;
     }
     &__label{
       &--textarea{
@@ -45,7 +45,7 @@
         left:0;
       }
     }
-    &__submit{
+    & input[type="submit"]{
       width:10.92em;
       height: 3.57em;
       margin:3.14em 0;
