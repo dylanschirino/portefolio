@@ -2,6 +2,8 @@
 
 add_theme_support( 'post-thumbnails' );
 add_image_size( 'thumb-lastproject', 377,269, true );
+add_image_size( 'thumb-tv', 420,300, true );
+add_image_size( 'thumb-bigimage', 890,422, true );
 /*
 *  Register nav menus
 */

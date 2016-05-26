@@ -309,7 +309,7 @@ p {
   .lastproject__title {
     text-align: center;
     margin: 0; }
-  .lastproject__image {
+  .lastproject img {
     display: block;
     width: 50%;
     height: auto;
@@ -354,14 +354,14 @@ p {
   margin-right: 11.68em;
   margin-top: 5em; }
 
-.introproject__image {
+.introproject img {
   margin-top: 8em;
   margin-left: 18.5em;
   float: left; }
 
 /* MEDIAQUERIES FOR INTROPROJECT*/
 @media screen and (max-width: 1123px) {
-  .introproject__image {
+  .introproject img {
     margin-left: 2em; } }
 
 @media screen and (max-width: 957px) {
@@ -371,13 +371,13 @@ p {
 @media screen and (max-width: 803px) {
   .introproject {
     max-height: auto; }
-    .introproject__text, .introproject__title, .introproject__image {
+    .introproject__text, .introproject__title, .introproject img {
       float: none; }
     .introproject__title {
       margin-left: 0.5em;
       text-align: center;
       margin-bottom: 1em; }
-    .introproject__image {
+    .introproject img {
       margin-top: 2em;
       margin: auto;
       display: block;
@@ -390,7 +390,7 @@ p {
       padding-bottom: 3em; } }
 
 @media screen and (max-width: 450px) {
-  .introproject__image {
+  .introproject img {
     width: 90%;
     margin-left: 0;
     margin: auto;
@@ -437,7 +437,7 @@ p {
     height: auto;
     margin: 0;
     margin: 1em auto; }
-    .listproject__smallcards, .listproject__link, .listproject__image, .listproject__container {
+    .listproject__smallcards, .listproject__link, .listproject img, .listproject__container {
       width: 100%;
       height: auto;
       margin: 0;
@@ -461,7 +461,7 @@ p {
 .view-project__title {
   margin: 2.6588em 0 1.944em 3.38em; }
 
-.view-project__image {
+.view-project img {
   display: block;
   margin: auto; }
 
@@ -469,7 +469,7 @@ p {
   .view-project__title {
     margin: 3em 0;
     text-align: center; }
-  .view-project__image {
+  .view-project img {
     width: 90%;
     height: auto;
     margin: auto; } }
@@ -496,7 +496,7 @@ p {
   height: 3.78em;
   margin-bottom: 2em; }
 
-.project-desc__image {
+.project-desc img {
   margin-top: 4.1em;
   float: right; }
 
@@ -514,13 +514,13 @@ p {
   .project-desc__button {
     width: 80%;
     margin: 3em auto; }
-  .project-desc__image {
+  .project-desc img {
     float: none;
     display: block;
     margin: auto; } }
 
 @media screen and (max-width: 422px) {
-  .project-desc__image {
+  .project-desc img {
     width: 90%;
     height: auto;
     margin: auto; } }
@@ -1162,6 +1162,9 @@ p {
     display: block;
     font: 5em "glyphs";
     padding-bottom: 0.3em; }
+
+.listproject img {
+  border-radius: 12px; }
 
 @media screen and (max-width: 913px) {
   .listproject__link::after {

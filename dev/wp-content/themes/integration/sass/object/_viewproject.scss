@@ -9,7 +9,7 @@
   &__title{
     margin:2.6588em 0 1.944em 3.38em;
   }
-  &__image{
+  & img{
     display: block;
     margin:auto;
   }
@@ -21,7 +21,7 @@
       margin:3em 0 ;
       text-align: center;
     }
-    &__image{
+    & img{
       width: 90%;
       height: auto;
       margin: auto;
@@ -53,7 +53,7 @@
     height: 3.78em;
     margin-bottom: 2em;
   }
-  &__image{
+  & img{
     margin-top: 4.1em;
     float: right;
   }
@@ -79,7 +79,7 @@
       width: 80%;
       margin:3em auto;
     }
-    &__image{
+    & img{
       float: none;
       display: block;
       margin: auto;
@@ -88,7 +88,7 @@
 }
 @media screen and (max-width:422px) {
   .project-desc{
-    &__image{
+    & img{
       width: 90%;
       height: auto;
       margin: auto;

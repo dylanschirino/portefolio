@@ -7,7 +7,7 @@ get_header();
 <body>
 <header class="header">
   <div class="header__bckg">
-    <h1 aria-level="1" role="heading" class="header__title"><?php bloginfo();?> - <?php the_title();?></h1>
+    <h1 aria-level="1" role="heading" class="header__title"><?php bloginfo();?>-<?php the_title();?></h1>
 
     <nav class="header__menu">
 
