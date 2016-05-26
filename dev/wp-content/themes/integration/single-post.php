@@ -34,7 +34,95 @@ get_header();
         </ul>
       </nav>
       <section class="view-project">
-        <h2 class="view-project__title" aria-level="2" role="heading">css zen garden</h2>
-        <img class="view-project__image retina" src="img/csszgbig.png" alt="Capture d'écran du site csszengarden" width="840" height="422">
+        <h2 class="view-project__title" aria-level="2" role="heading"><?php echo the_title();?></h2>
+        <?php if( get_field('image_big_projet')):
+      $bigimage = get_field('image_big_projet');
+      $bigimagesize='thumb-bigimage';
+      ?>
+          <?php echo wp_get_attachment_image($bigimage['id'],$bigimagesize);?>
+        <?php endif;?>
       </section>
   </header>
+  <main id="content">
+      <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
+    <section class="project-desc">
+      <div class="project-desc__container">
+      <h3 class="project-desc__title" aria-level="3" role="heading">Le projet</h3>
+      <p class="project-desc__text">
+        <?php echo the_field('intro');?>
+      </p>
+      <a class="project-desc__button" href="<?php echo the_field('lien_vers_le_site');?>" title="Vous quittez le site vers <?php the_title();?>">Voir le site</a>
+    </div>
+    <?php if( get_field('screen_intro')):
+      $screen_intro = get_field('screen_intro');
+      $screensize='thumb-screen';
+      ?>
+      <?php echo wp_get_attachment_image($screen_intro['id'],$screensize);?>
+    </div>
+  <?php endif;?>
+    </section>
+
+    <section class="github">
+      <h4 class="github__title" aria-level="4" role="heading">Repository GitHub</h4>
+      <a class="github__button project-desc__button" href="<?php echo the_field('lien_vers_le_site');?>" title="Vous quittez le site vers <?php the_title();?>">Voir le repo GitHub</a>
+    </section>
+
+    <section class="project-info">
+      <h4 class="project-info__title" aria-level="4" role="heading">Comment le site est fait ?</h4>
+
+      <article class="project-info__design">
+        <div class="design__container">
+        <h5 class="design__title" aria-level="5" role="heading">Le design</h5>
+        <p class="design__text">
+          <?php echo the_field('design_texte');?>
+        </p>
+      </div>
+        <figure class="design__imagecontainer">
+          <?php if( get_field('screen_intro')):
+            $screen_intro = get_field('screen_intro');
+            ?>
+            <?php echo wp_get_attachment_image($screen_intro['id'],$screensize);?>
+          </div>
+        <?php endif;?>
+        </figure>
+      </article>
+
+      <article class="project-info__design project-info__design--contrainte">
+        <div class="design__container design__container--contrainte">
+        <h5 class="design__title" aria-level="5" role="heading">Les Contraintes</h5>
+        <p class="design__text design__text--contrainte">
+        <?php echo the_field('contrainte_texte');?>
+        </p>
+
+      </div>
+      <figure class="design__imagecontainer design__imagecontainer--contrainte">
+        <?php if( get_field('screen_intro')):
+          $screen_intro = get_field('screen_intro');
+          ?>
+          <?php echo wp_get_attachment_image($screen_intro['id'],$screensize);?>
+        </div>
+      <?php endif;?>
+      </figure>
+      </article>
+
+      <article class="project-info__time">
+        <h5 class="time__title" aria-level="5" role="heading">
+          Temps en café
+        </h5>
+        <p class="time__subtitle">
+          Un café vaut environs 2-3 jours
+        </p>
+        <ul class="time__list">
+          <?php $limit=get_field('temps');?>
+          <?php for($i=0;$i<$limit;$i++):?>
+          <li class="time__element">
+            <span class="visualhidden"><?php echo $i;?></span>
+          </li>
+        <?php endfor;?>
+        </ul>
+      </article>
+    </section>
+  <?php endwhile; endif;?>
+
+  </main>
+  <?php get_footer();?>

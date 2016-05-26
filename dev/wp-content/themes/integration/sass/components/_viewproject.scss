@@ -13,6 +13,9 @@
     text-transform: uppercase;
     color:$white;
   }
+  & img{
+    border-radius: 12.5px;
+  }
 }
 .project-desc{
   color:$white;
@@ -43,43 +46,17 @@
   }
 }
 
-.palette{
+.github{
   &__title{
     font-size:2.4em;
     text-transform: uppercase;
     letter-spacing: 1.53px;
     color:$blueGray;
   }
-  &__color{
-    display: inline-block;
-    height: 2.5em;
-    width: 6.4em;
-    border-radius: 12.5px;
-    margin-left: -2em;
-    margin-top: -0.5em;
-    &--un{
-      background-color:#DF5A48;
-    }
-    &--deux{
-      background-color:#8359AA;
-    }
-    &--trois{
-      background-color: #334D5C;
-    }
-    &--quatre{
-      background-color: #45B29D;
-    }
-    &--cinq{
-      background-color: #E27A3F;
-    }
-    &--six{
-      background-color: #3E83B4;
-    }
-    &--sept{
-      background-color:$white;
-    }
-    &--huit{
-      background-color: #A52934;
+  &__button{
+    color:$borderButtonColor;
+    &:hover{
+      color:$white;
     }
   }
 }

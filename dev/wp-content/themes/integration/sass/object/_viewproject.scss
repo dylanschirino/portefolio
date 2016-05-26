@@ -96,7 +96,7 @@
   }
 }
 
-.palette{
+.github{
   width: 81.4%;
   margin: auto;
   &::after{
@@ -106,17 +106,16 @@
   }
   &__title{
     margin:3.33em 0 3.3em 2em;
-    float: left;
+    text-align: center;
   }
-  &__list{
-    float: right;
-    width: 19.4%;
-    margin: 7.5em 0;
+  &__button{
+    width: 50%;
+    margin:3em auto;
   }
 }
 
 @media screen and (max-width:756px) {
-  .palette{
+  .github{
     width: 80%;
     margin: auto;
     &__title{
@@ -125,9 +124,8 @@
         margin:2.3em 0;
         display: block;
     }
-    &__list{
-      float: none;
-      width:70%;
+    &__button{
+      width:100%;
       height: auto;
       text-align:center;
       margin:1em auto;
@@ -176,9 +174,9 @@
       margin-right: 8em;
     }
   }
-  &__imagecontainer{
+  &__imagecontainer img{
     display: inline-block;
-    margin-top: 24.1em;
+    margin-top: 20em;
     margin-left: 5.9em;
     &--contrainte{
       margin-top: 0;
@@ -233,10 +231,17 @@
       width: 90%;
       margin: auto;
     }
-    &__image,&__imagecontrainte{
+    &__imagecontrainte{
       width: 90%;
       height: auto;
       margin:2em auto;
+    }
+    &__imagecontainer img{
+      float: none;
+      width:100%;
+      margin:0;
+      margin: auto;
+      height: auto;
     }
   }
   .project-info{
