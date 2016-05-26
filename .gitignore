@@ -5,4 +5,14 @@ assets/
 
 icon/
 
-integration/node_modules/
+
+
+dev/
+!dev/wp-content/
+dev/wp-content/*
+!dev/wp-content/themes/
+dev/wp-content/themes/*
+!dev/wp-content/themes/integration/
+
+node_modules
+

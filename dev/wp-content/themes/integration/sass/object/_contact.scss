@@ -1,0 +1,87 @@
+/* PORTEFOLIO
+ *
+ * /sass/object/contact.scss - NON Design of contact stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 14/05/2016
+ */
+
+.contact{
+  &::after{
+    content:"";
+    display: block;
+    clear: both;
+  }
+  &__title{
+    margin:2.03em 0 1.8em 0;
+  }
+  &__container{
+    display: inline-block;
+    margin-left: 7.9em;
+    width: 36%;
+  }
+}
+
+.contact-form{
+    float: right;
+    width: 28.71%;
+    margin:8.1em 8.1em 0 0;
+    display: inline-block;
+    &__input{
+      display: block;
+      min-height:5em;
+      padding-left:8px;
+      width:80%;
+      &--textarea{
+        margin: 1em 0;
+        width: 90%;
+      }
+    }
+    &__label{
+      &--textarea{
+        margin-top: 1em;
+        position: static;
+        top:0;
+        left:0;
+      }
+    }
+    &__submit{
+      width:10.92em;
+      height: 3.57em;
+      margin:3.14em 0;
+    }
+}
+
+@media screen and (max-width:1111px) {
+    .contact{
+      &__container{
+        margin-left:4em;
+      }
+    }
+    .contact-form{
+      margin-right: 2em;
+    }
+}
+@media screen and (max-width:807px) {
+  .contact{
+    &__container{
+      display: block;
+      width: 80%;
+      margin: auto;
+    }
+  }
+  .contact-form{
+    float:none;
+    display: block;
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (max-width:363px) {
+  .contact{
+    &__title{
+      text-align:center;
+      margin:2em 0 ;
+    }
+  }
+}

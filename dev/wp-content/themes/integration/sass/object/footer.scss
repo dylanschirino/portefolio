@@ -1,0 +1,21 @@
+/* PORTEFOLIO
+*
+* /sass/object/footer.scss - NON Design of footer stylesheet
+*
+* coded by Dylan Schirino
+* started at 09/05/2016
+*/
+
+.footer{
+  text-align: center;
+  &__link{
+    display: inline-block;
+    &::before{
+      display:block;
+      text-align: center;
+    }
+  }
+  &__subfooter{
+    height: 3.7em;
+  }
+}

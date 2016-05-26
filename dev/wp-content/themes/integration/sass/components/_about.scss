@@ -1,0 +1,35 @@
+/* PORTEFOLIO
+ *
+ * /sass/components/about.scss - Design of about stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 15/05/2016
+ */
+
+.headerabout{
+  background-color: #303A40;
+  padding-bottom:4em;
+}
+.about{
+  background-color:$white;
+  color:#3A3A3A;
+  &__title{
+    font: 3em $montserratLight;
+    text-transform: uppercase;
+    letter-spacing: 2.46px;
+    padding:1.5em 0 2.3em 0;
+    &::after{
+      content:"\e906";
+      font:1.5em $glyphsStack;
+      float:right;
+    }
+  }
+  &__text{
+    font-size:1.6em;
+    line-height: 1.6em;
+    padding-bottom: 1.625em;
+  }
+}
+.draw{
+   background-color:#303A40;
+ }

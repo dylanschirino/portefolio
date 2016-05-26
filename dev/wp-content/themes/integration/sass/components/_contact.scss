@@ -1,0 +1,153 @@
+/* PORTEFOLIO
+ *
+ * /sass/components/contact.scss - Design of contact stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 14/05/2016
+ */
+
+.contactbody{
+ background:rgba(#09141B,0.75) url("../img/barre.png")no-repeat center 400px;
+ }
+ @media screen and (max-width:803px) {
+   .contactbody{
+     background-position:right 400px;
+   }
+ }
+
+.contact{
+  color:$white;
+  &::after{
+    content:"";
+    display: block;
+    clear: both;
+  }
+  &__title{
+    font:3em $montserratLight;
+    text-transform: uppercase;
+    letter-spacing: 2.46px;
+  }
+  &__container{
+    &::before{
+      content:"";
+      float: right;
+      margin-top: 7em;
+      display: block;
+      width: 2px;
+      height: 40em;
+      background: white;
+      transform: skewX(-15deg);
+    }
+  }
+  &__element{
+    font:1.8em $montserratLight;
+    padding-bottom: 4em;
+    transition: .2s ease-in-out;
+    &:hover{
+      transform:translateY(-3px);
+    }
+  }
+  &__link{
+    color:$white;
+    &::before{
+      font:2em $glyphsStack;
+      padding-right:1.5em;
+      color:$greenLight;
+    }
+    &--mail::before{
+      content:"\e90a";
+    }
+    &--phone::before{
+      content:"\e90b";
+      font-size:2.5em;
+    }
+    &--github::before{
+      content:"\e904";
+      font-size: 2.5em;
+    }
+  }
+}
+@media screen and (max-width:920px) {
+  .contact{
+    &__container{
+      &::before{
+        float:none;
+        height: 0;
+        background: none;
+      }
+    }
+  }
+}
+@media screen and (max-width:580px) {
+  .contactbody{
+    background-image: none;
+  }
+  .contact{
+    &__element{
+      width:100%;
+      margin: auto;
+    }
+    &__link{
+      width: 80%;
+      margin: auto;
+      &::before{
+        padding:0 0.4em 0 0;
+      }
+    }
+  }
+}
+.contact-form{
+  &__title,&__subtitle{
+    font-size: 1.5em;
+    padding-bottom: 1.3em;
+  }
+  &__subtitle{
+    text-align: right;
+  }
+  &__legend{
+    font:1.4em $montserratLight;
+    letter-spacing: 1.31px;
+  }
+  &__input{
+    border: none;
+    -webkit-appareance:none;
+    background: none;
+    border-bottom: 1px solid white;
+    padding-top:1em;
+    color:white;
+    font-size: 1.4em;
+    &--textarea{
+      border:1px solid white;
+      font:1.4em $montserratLight;
+    }
+  }
+  &__label{
+    display: block;
+    color:$white;
+    font-size: 1.2em;
+    position: relative;
+    bottom:15px;
+    left:5px;
+    transition: .2s ease-in-out;
+  }
+  &__submit{
+    -webkit-appareance:none;
+    border:none;
+    background: none;
+    border:4px solid #00BA7A;
+    font:1.4em $montserratLight;
+    letter-spacing: 1.35px;
+    text-transform: uppercase;
+    color:$white;
+    transition: .3s ease-in-out;
+    &:hover{
+      background-color: #00BA7A;
+      border:4px solid $white;
+      cursor: pointer;
+    }
+  }
+}
+.contact-form__input:focus + .contact-form__label, .contact-form__input[value]:not([value=""]) + .contact-form__label{
+  bottom:60px;
+  color:#a5a5a5;
+}

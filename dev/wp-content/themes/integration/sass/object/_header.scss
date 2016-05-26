@@ -1,0 +1,48 @@
+/* PORTEFOLIO
+ *
+ * /sass/object/header.scss - Design of header stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 06/05/2016
+ */
+ .header{
+   height: 100vh;
+ }
+ .menu{
+   &__list{
+     width: 56.5em;
+     margin-left: 8.7em;
+   }
+   &__element{
+     display: inline-block;
+     margin-left:2.7em;
+   }
+ }
+ .mainimage{
+   text-align: center;
+ }
+
+ @media screen and (max-width:669px) {
+   .menu{
+     &__list{
+       margin-left: 0;
+
+     }
+   }
+ }
+ @media screen and (max-width:579px) {
+   .menu{
+    &__list{
+      display: none;
+      width:90%;
+      margin: auto;
+      &--open{
+        display:block;
+      }
+    }
+    &__element{
+      display: block;
+      padding-bottom:3em;
+    }
+   }
+ }

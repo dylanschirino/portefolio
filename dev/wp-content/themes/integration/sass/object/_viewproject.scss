@@ -1,0 +1,248 @@
+/* PORTEFOLIO
+*
+* /sass/object/viewproject.scss - NON Design of viewproject stylesheet
+*
+* coded by Dylan Schirino
+* started at 13/05/2016
+*/
+.view-project{
+  &__title{
+    margin:2.6588em 0 1.944em 3.38em;
+  }
+  &__image{
+    display: block;
+    margin:auto;
+  }
+}
+
+@media screen and (max-width:859px) {
+  .view-project{
+    &__title{
+      margin:3em 0 ;
+      text-align: center;
+    }
+    &__image{
+      width: 90%;
+      height: auto;
+      margin: auto;
+    }
+  }
+
+}
+
+.project-desc{
+  &::after{
+    content:"";
+    display: block;
+    clear: both;
+  }
+  &__container{
+    margin-left:12.4em;
+    float: left;
+  }
+  &__title{
+    margin-bottom:0.953em;
+  }
+  &__text{
+    width: 31.25em;
+    margin-bottom: 2.825em;
+  }
+  &__button{
+    display: block;
+    width: 20.6em;
+    height: 3.78em;
+    margin-bottom: 2em;
+  }
+  &__image{
+    margin-top: 4.1em;
+    float: right;
+  }
+}
+@media screen and (max-width:1043px) {
+  .project-desc{
+    &__container{
+      margin-left: 3em;
+    }
+  }
+}
+@media screen and (max-width:949px) {
+  .project-desc{
+    &__title{
+      text-align: center;
+    }
+    &__text{
+      float: none;
+      width:80%;
+      margin: auto;
+    }
+    &__button{
+      width: 80%;
+      margin:3em auto;
+    }
+    &__image{
+      float: none;
+      display: block;
+      margin: auto;
+    }
+  }
+}
+@media screen and (max-width:422px) {
+  .project-desc{
+    &__image{
+      width: 90%;
+      height: auto;
+      margin: auto;
+    }
+  }
+}
+
+.palette{
+  width: 81.4%;
+  margin: auto;
+  &::after{
+    content:"";
+    display: block;
+    clear: both;
+  }
+  &__title{
+    margin:3.33em 0 3.3em 2em;
+    float: left;
+  }
+  &__list{
+    float: right;
+    width: 19.4%;
+    margin: 7.5em 0;
+  }
+}
+
+@media screen and (max-width:756px) {
+  .palette{
+    width: 80%;
+    margin: auto;
+    &__title{
+        float: none;
+        text-align: center;
+        margin:2.3em 0;
+        display: block;
+    }
+    &__list{
+      float: none;
+      width:70%;
+      height: auto;
+      text-align:center;
+      margin:1em auto;
+    }
+  }
+}
+
+
+.project-info{
+  &::after{
+    content:"";
+    display: block;
+    clear: both;
+  }
+}
+.project-info{
+  &__design{
+    margin-left: 12.5em;
+    &::after{
+      content:"";
+      display: block;
+      clear: both;
+    }
+  }
+  &__time{
+    width: 39em;
+    margin: auto;
+    margin-top: 7.3em;
+  }
+}
+
+@media screen and (max-width:1136px) {
+  .project-info{
+    &__design{
+      margin-left: 2em;
+    }
+  }
+}
+.design{
+  &__container{
+    display:inline-block;
+    width: 53em;
+    float: left;
+    &--contrainte{
+      float: right;
+      margin-right: 8em;
+    }
+  }
+  &__imagecontainer{
+    display: inline-block;
+    margin-top: 24.1em;
+    margin-left: 5.9em;
+    &--contrainte{
+      margin-top: 0;
+      margin: 0;
+    }
+  }
+  &__imagecontrainte{
+    display: block;
+    margin-top: 3.2em;
+  }
+  &__text{
+    margin-bottom: 3.3125em;
+  }
+}
+
+@media screen and (max-width:1049px) {
+  .design{
+    &__container{
+      display: block;
+      float: none;
+      width: 60%;
+      margin: auto;
+    }
+    &__imagecontainer{
+      margin:0;
+      display: block;
+      text-align: center;
+      margin:2em auto;
+    }
+    &__imagecontrainte{
+      margin:2em auto;
+      display: block;
+      text-align: center;
+    }
+  }
+}
+.time{
+  &__list{
+    text-align: center;
+  }
+  &__element{
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:524px) {
+  .design{
+    &__container{
+      display: block;
+      float: none;
+      width: 90%;
+      margin: auto;
+    }
+    &__image,&__imagecontrainte{
+      width: 90%;
+      height: auto;
+      margin:2em auto;
+    }
+  }
+  .project-info{
+    &__time{
+      width:90%;
+      margin: auto;
+    }
+  }
+}

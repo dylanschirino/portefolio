@@ -1,0 +1,165 @@
+/* PORTEFOLIO
+*
+* /sass/object/Project.scss - NON Design of Project stylesheet
+*
+* coded by Dylan Schirino
+* started at 13/05/2016
+*/
+.headerproject{
+  min-height: 100vh;
+}
+.introproject{
+  &::after{
+    content:"";
+    display: block;
+    clear: both;
+  }
+  &__title{
+    text-align: right;
+    margin-right: 5.85em;
+    margin-top: 2.1em;
+    float: right;
+  }
+  &__text{
+    float: right;
+    display: inline-block;
+    width:19.68em;
+    margin-right: 11.68em;
+    margin-top: 5em;
+  }
+  &__image{
+    margin-top:8em;
+    margin-left: 18.5em;
+    float: left;
+  }
+}
+
+/* MEDIAQUERIES FOR INTROPROJECT*/
+
+@media screen and (max-width:1123px) {
+  .introproject{
+    &__image{
+      margin-left:2em;
+    }
+  }
+}
+@media screen and (max-width:957px) {
+  .introproject{
+    &__text,&__title{
+      margin-right:2em;
+    }
+  }
+}
+@media screen and (max-width:803px) {
+  .introproject{
+    max-height: auto;
+    &__text,&__title,&__image{
+      float:none;
+    }
+    &__title{
+      margin-left:0.5em;
+      text-align: center;
+      margin-bottom: 1em;
+    }
+    &__image{
+      margin-top: 2em;
+      margin: auto;
+      display: block;
+      text-align: center;
+      height: auto;
+    }
+    &__text{
+      display: block;
+      max-width: 90%;
+      margin:3em auto;
+      padding-bottom:3em;
+    }
+  }
+}
+@media screen and (max-width:450px) {
+  .introproject{
+    &__image{
+      width: 90%;
+      margin-left:0;
+      margin:auto;
+      height: auto;
+    }
+  }
+}
+
+/**************************LISTPROJECT*********************************/
+
+.listproject{
+  width:90em;
+  margin: auto;
+  &__time{
+    display: block;
+    text-align:left;
+  }
+  &__smallcards{
+    width: 90em;
+    &::after{
+      content:"";
+      display:block;
+      clear: both;
+    }
+  }
+  &__container{
+    position: relative;
+    margin-top:5.7em;
+    &:last-child{
+      margin-bottom:4em;
+    }
+    &--left{
+      display: inline-block;
+      margin-right:6em;
+    }
+    &--right{
+      display: inline-block;
+      margin-left:6em;
+    }
+  }
+  &__content{
+    position: absolute;
+    top:40%;
+    transform: translateY(-40%);
+    left:50%;
+    transform: translateX(-50%);
+    &--small{
+      position: absolute;
+      top:20%;
+    }
+  }
+}
+
+/**************************MEDIAQUERIESLISTPROJECT*********************/
+@media screen and (max-width:913px) {
+
+  .listproject{
+    width:90%;
+    height: auto;
+    margin: 0;
+    margin:1em auto;
+    &__smallcards,&__link,&__image,&__container{
+      width:100%;
+      height:auto;
+      margin: 0;
+      margin:1em auto;
+    }
+    &__content{
+      &--small{
+        position:absolute;
+        top:40%;
+      }
+    }
+    }
+}
+@media screen and (max-width:471px) {
+  .listproject{
+    &__content{
+      position: absolute;
+      top:15%;
+    }
+  }
+
+}

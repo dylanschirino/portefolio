@@ -1,0 +1,144 @@
+/* PORTEFOLIO
+ *
+ * /sass/components/viewproject.scss - NON Design of viewproject stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 13/05/2016
+ */
+
+.view-project{
+  &__title{
+    font:3.6em $montserratLight;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color:$white;
+  }
+}
+.project-desc{
+  color:$white;
+  background-color: $greenBckg;
+  &__title{
+    font:2.4em/2em $montserratLight;
+    text-transform: uppercase;
+    letter-spacing: 3.3px;
+    padding-top: 1.75em;
+  }
+  &__text{
+    font-size:1.6em;
+    line-height:1.5em;
+  }
+  &__button{
+    font-size:1.8em;
+    line-height: 3.78em;
+    color:$white;
+    text-transform: uppercase;
+    letter-spacing: 1.15px;
+    border:4px solid $borderButtonColor;
+    text-align: center;
+    transition: .3s ease-in-out;
+    &:hover{
+      background-color: $borderButtonColor;
+      border:4px solid $white;
+    }
+  }
+}
+
+.palette{
+  &__title{
+    font-size:2.4em;
+    text-transform: uppercase;
+    letter-spacing: 1.53px;
+    color:$blueGray;
+  }
+  &__color{
+    display: inline-block;
+    height: 2.5em;
+    width: 6.4em;
+    border-radius: 12.5px;
+    margin-left: -2em;
+    margin-top: -0.5em;
+    &--un{
+      background-color:#DF5A48;
+    }
+    &--deux{
+      background-color:#8359AA;
+    }
+    &--trois{
+      background-color: #334D5C;
+    }
+    &--quatre{
+      background-color: #45B29D;
+    }
+    &--cinq{
+      background-color: #E27A3F;
+    }
+    &--six{
+      background-color: #3E83B4;
+    }
+    &--sept{
+      background-color:$white;
+    }
+    &--huit{
+      background-color: #A52934;
+    }
+  }
+}
+
+.project-info{
+  background-color: #F2F2F2;
+  padding-bottom: 7.1em;
+  &__time{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+}
+
+.design{
+  &__title{
+    font: 2.4em $montserratLight;
+    text-transform: uppercase;
+    letter-spacing: 2.63px;
+    display: inline-block;
+    padding:4em 0 2.29em 0;
+    &::before{
+      content:"\e901";
+      display: block;
+      font: 1.5em $glyphsStack;
+      padding-bottom: 0.18em;
+      text-align: center;
+      color:$greenLight;
+    }
+  }
+  &__text{
+    font-size: 1.6em;
+    line-height: 1.6em;
+  }
+}
+
+.time{
+  &__title{
+    font:1.6em/1.6em $montserratLight;
+    text-align: center;
+    padding: 1.6525em 0;
+  }
+  &__subtitle{
+    font-size: 1.3em;
+    text-align: center;
+  }
+  &__element{
+    padding: 2.5em 2.1em 3.9em 0;
+    &::before{
+      content:"\e902";
+      display: block;
+      font: 3em $glyphsStack;
+      color:$blue;
+    }
+  }
+}
+@media screen and (max-width:347px) {
+  .time{
+    &__element{
+      padding:2.5em 0.6em 3.9em;
+    }
+  }
+}

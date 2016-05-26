@@ -1,0 +1,40 @@
+/* PORTEFOLIO
+ *
+ * /sass/components/guesswhat.scss - Design of guesswhat stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 06/05/2016
+ */
+
+ .guesswhat{
+   background: url("../img/hey.png") no-repeat 80px bottom;
+   &__title,&__subtitle{
+     font:2.4em $montserratLight;
+     line-height: 1.5em;
+   }
+   &__button{
+     font-size:1.8em;
+     line-height: 3.7em;
+     letter-spacing: 1px;
+     text-transform: uppercase;
+     color: $black;
+     border:3px solid $blueGray;
+     transition:.2s ease-in-out;
+     &:hover{
+       background-color: $blueGray;
+       color: white;
+     }
+   }
+ }
+ @media screen and (max-width:700px) {
+
+   .guesswhat{
+     background: none;
+     &__title,&__subtitle{
+      text-align: center;
+      margin:1.5em 0 0 0;
+
+     }
+   }
+
+ }
