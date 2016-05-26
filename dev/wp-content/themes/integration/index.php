@@ -47,6 +47,33 @@ get_header();
   </div>
 </header>
 <main id="content">
+
+  <section class="lastproject">
+    <h3 class="lastproject__title" aria-level="3" role="heading">Projet récent</h3>
+    <div class="lastproject__containerbutton">
+    <a class="lastproject__button" href="<?php echo the_permalink('17');?>" title="Vers la page des projet">Voir plus de projet</a>
+  </div>
+    <a href="http://www.hepl01.cblue.be/~user31/dw/artiste/" class="lastproject__link" title="Vers le site de Nicolas de Stael">
+      <span class="lastproject__link-text">Voir le site</span>
+      <div class="lastproject__image">
+      <?php if( get_field('image_projet')):
+    $projet = get_field('image_projet');
+    $projetsize='thumb-lastproject';
+    ?>
+        <?php echo wp_get_attachment_image($projet['id'],$projetsize);?>
+      <?php endif;?>
+    </div>
+    </a>
+  </section>
+
+  <section class="guesswhat">
+    <h3 class="guesswhat__title" arial-level="3" role="heading">Hey devinez quoi &nbsp;?</h3>
+    <div class="gueswhat__center">
+      <p class="guesswhat__subtitle">Je suis disponible&nbsp;!</p>
+      <a class="guesswhat__button" href="<?php echo the_permalink('21');?>" title="Vers la page de contact">Contactez moi </a>
+    </div>
+  </section>
+
   <section class="whyme">
     <h3 class="whyme__title" aria-level="3" role="heading">
       Pourquoi moi&nbsp;?
@@ -68,13 +95,6 @@ get_header();
     </div>
   </section>
 
-  <section class="guesswhat">
-    <h3 class="guesswhat__title" arial-level="3" role="heading">Hey devinez quoi &nbsp;?</h3>
-    <div class="gueswhat__center">
-      <p class="guesswhat__subtitle">Je suis disponible&nbsp;!</p>
-      <a class="guesswhat__button" href="<?php echo the_permalink('21');?>" title="Vers la page de contact">Contactez moi </a>
-    </div>
-  </section>
 
   <section class="skills">
     <h3 class="skills__title" aria-level="3" role="heading">Mes compétences</h3>
@@ -130,17 +150,6 @@ get_header();
   </div>
 
     </div>
-  </section>
-
-  <section class="lastproject">
-    <h3 class="lastproject__title" aria-level="3" role="heading">Projet récent</h3>
-    <div class="lastproject__containerbutton">
-    <a class="lastproject__button" href="#" title="Vers la page des projet">Voir plus de projet</a>
-  </div>
-    <a href="http://www.hepl01.cblue.be/~user31/dw/artiste/" class="lastproject__link" title="Vers le site de Nicolas de Stael">
-      <span class="lastproject__link-text">Voir le site</span>
-      <img class="lastproject__image" src="img/latestproject.jpg" width="377" height="269" alt="capture d'écran du dernier site fait">
-    </a>
   </section>
 
   <?php get_footer();?>

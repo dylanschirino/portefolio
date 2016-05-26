@@ -7,7 +7,7 @@ $(function() {
         ctx = canvas.getContext('2d'),
         color = '#FFFFFF';
     ctx.fillStyle = color;
-    ctx.lineWidth = 0.5;
+    ctx.lineWidth = 0.2;
     ctx.strokeStyle = color;
     var oImage = new Image();
     oImage.addEventListener("load",function(){

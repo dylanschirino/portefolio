@@ -1,5 +1,7 @@
 <?php
 
+add_theme_support( 'post-thumbnails' );
+add_image_size( 'thumb-lastproject', 377,269, true );
 /*
 *  Register nav menus
 */

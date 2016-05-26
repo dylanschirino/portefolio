@@ -54,7 +54,7 @@
     }
   }
   &__link-text{
-    opacity: 0;
+    opacity: 1;
     transition:opacity .2s ease-in-out;
     &::before{
       content:"\e908";

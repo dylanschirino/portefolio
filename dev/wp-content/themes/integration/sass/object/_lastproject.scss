@@ -16,7 +16,7 @@
     text-align: right;
     margin-right: 9.5833em;
   }
-  &__image{
+  & img{
     margin-left:7em;
     border-radius:7px;
     float: left;
@@ -47,7 +47,7 @@
 @media screen and (max-width:1134px) {
 
   .lastproject{
-    &__image{
+    & img{
       margin-left:2em;
       display: block;
       text-align: center;
