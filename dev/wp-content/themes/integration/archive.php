@@ -65,7 +65,7 @@ if(is_page()){
         </div>
       <?php endif;?>
       <p class="introproject__text">
-        Vous pouvez retrouvé ici tout les projets que j’ai réalisé dans le cadre de projet scolaire mais également professionel.
+        Vous pouvez retrouver ici tout les projets que j’ai réalisé dans le cadre de projets scolaires mais également professionels.
         Cliquez sur le projet pour en découvrir les détails.
       </p>
     </section>

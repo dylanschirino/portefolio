@@ -64,7 +64,7 @@ Template Name: HomePage
   <section class="lastproject">
     <h3 class="lastproject__title" aria-level="3">Projet récent</h3>
     <div class="lastproject__containerbutton">
-    <a class="lastproject__button" href="<?php echo the_permalink('17');?>" title="Vers la page des projet">Voir plus de projet</a>
+    <a class="lastproject__button" href="<?php echo the_permalink('17');?>" title="Vers la page des projet">Voir plus de projets</a>
   </div>
     <a href="http://www.hepl01.cblue.be/~user31/dw/artiste/" class="lastproject__link" title="Vers le site de Nicolas de Stael">
       <span class="lastproject__link-text">Voir le site</span>
@@ -78,7 +78,7 @@ Template Name: HomePage
   </section>
 
   <section class="guesswhat">
-    <h4 class="guesswhat__title" aria-level="4">Hey devinez quoi &nbsp;?</h4>
+    <h4 class="guesswhat__title" aria-level="4">Hey, devinez quoi &nbsp;?</h4>
     <div class="gueswhat__center">
       <p class="guesswhat__subtitle">Je suis disponible&nbsp;!</p>
       <a class="guesswhat__button" href="<?php echo the_permalink('21');?>" title="Vers la page de contact">Contactez moi </a>
