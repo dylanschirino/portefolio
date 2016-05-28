@@ -151,4 +151,22 @@
 input:focus + label, input[value]:not([value=""]) + label{
   bottom:60px;
   color:#a5a5a5;
+  -webkit-appareance:none;
+  -webkit-border-radius:none;
+}
+span[role="alert"]{
+  display: none;
+}
+.screen-reader-response{
+  padding-top: 1em;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  color:white;
+  & li{
+    padding-top: 1em;
+  }
+  & a {
+    color:white;
+    text-decoration: underline;
+  }
 }

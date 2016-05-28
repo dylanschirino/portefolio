@@ -1,41 +1,41 @@
 <?php /*
-      Template Name: Contact
+Template Name: Contact
 */
 get_header();
 ?>
 <body class="contactbody">
-    <header class="headercontact">
-      <nav class="header__menu">
-        <h2 aria-level="2" role="heading" class="menu__title">Menu Principal</h2>
-        <div id="burger-shower" class="menu__burger">
-          <span class="visualhidden">menu</span>
-          <span class="menu__global menu__global--top"></span>
-          <span class="menu__global menu__global--middle"></span>
-          <span class="menu__global menu__global--bottom"></span>
-        </div>
-        <ul class="menu__list" id="menu">
-          <li class="menu__element">
-            <a class="menu__link" href="<?php echo the_permalink('7');?>" alt="Vers la page d'accueil">Accueil</a>
-          </li>
-          <li class="menu__element">
-            <a class="menu__link" href="<?php echo the_permalink('17');?>" alt="Vers la page d'accueil">Projet</a>
-          </li>
-          <li class="menu__element">
-            <a class="menu__link" href="<?php echo the_permalink('19');?>" alt="Vers la page d'accueil">About me</a>
-          </li>
-          <li class="menu__element">
-            <a class="menu__link menu__link--active" href="<?php echo the_permalink('21');?>" alt="Vers la page d'accueil">Contact</a>
-          </li>
-          <li class="menu__element">
-            <a class="menu__link" href="<?php echo the_permalink('');?>" alt="Vers la page d'accueil">CV</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main id="content">
-      <section class="contact">
-        <div class="contact__container">
-        <h2 class="contact__title" aria-level="2" role="heading">Contact</h2>
+  <header class="headercontact">
+    <nav class="header__menu">
+      <h2 aria-level="2" class="menu__title">Menu Principal</h2>
+      <div id="burger-shower" class="menu__burger">
+        <span class="visualhidden">menu</span>
+        <span class="menu__global menu__global--top"></span>
+        <span class="menu__global menu__global--middle"></span>
+        <span class="menu__global menu__global--bottom"></span>
+      </div>
+      <ul class="menu__list" id="menu">
+        <li class="menu__element">
+          <a class="menu__link" href="<?php echo the_permalink('7');?>" title="Vers la page d'accueil">Accueil</a>
+        </li>
+        <li class="menu__element">
+          <a class="menu__link" href="<?php echo the_permalink('17');?>" title="Vers la page d'accueil">Projet</a>
+        </li>
+        <li class="menu__element">
+          <a class="menu__link" href="<?php echo the_permalink('19');?>" title="Vers la page d'accueil">About me</a>
+        </li>
+        <li class="menu__element">
+          <a class="menu__link menu__link--active" href="<?php echo the_permalink('21');?>" title="Vers la page d'accueil">Contact</a>
+        </li>
+        <li class="menu__element">
+          <a class="menu__link" href="<?php echo the_permalink('');?>" title="Vers la page d'accueil">CV</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main id="content">
+    <section class="contact">
+      <div class="contact__container">
+        <h2 class="contact__title" aria-level="2">Contact</h2>
         <ul class="contact__list">
           <li class="contact__element">
             <a class="contact__link contact__link--mail" href="mailto:dylan.schirino@hotmail.fr" title="M'envoyer un email">dylan.schirino@hotmail.fr</a>
@@ -52,16 +52,39 @@ get_header();
 
       <div class="contact-form">
 
-      <p class="contact-form__title">Une question&nbsp;?</p>
-      <p class="contact-form__subtitle">Besoin de moi&nbsp;?</p>
+        <p class="contact-form__title">Une question&nbsp;?</p>
+        <p class="contact-form__subtitle">Besoin de moi&nbsp;?</p>
         <fieldset>
           <legend class="contact-form__legend">
             Remplissez ce formulaire
           </legend>
-              <?php echo do_shortcode( '[contact-form-7 id="80" title="Contact"]' ); ?>
+          <?php echo do_shortcode( '[contact-form-7 id="80" title="Contact"]' ); ?>
 
-        </fiedlset>
-      </form>
+        </fieldset>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+
+      <a class="footer__link footer__link--github" href="https://github.com/dylanschirino" title="Voir mon Github">GitHub</a>
+
+      <a class="footer__link footer__link--facebook" href="https://www.facebook.com/dylan.schirino" title="Voir mon facebook">Facebook</a>
+
+      <a class="footer__link footer__link--linkedin" href="https://www.linkedin.com/in/dylan-schirino" title="Me voir sur linkedin">Linkedin</a>
+
+      <a class="footer__link footer__link--phone" href="tel:+32493526168" title="Me téléphoner?">Téléphone</a>
+
     </div>
-      </section>
-    </main>
+    <div class="footer__subfooter">
+      <p class="subfooter__text">
+        Design par Dylan Schirino
+      </p>
+  </div>
+  </footer>
+  <script type="text/javascript" src="<?php echo get_template_directory_uri().'/assets/jquery-2.2.1.min.js';?>"></script>
+  <script type="text/javascript" src="<?php echo get_template_directory_uri().'/assets/assets.js';?>"></script>
+
+  </body>
+  </html>

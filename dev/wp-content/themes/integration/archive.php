@@ -1,3 +1,16 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!--[if lt IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <meta charset="utf-8">
+  <meta name="description" content="Portefolio de Dylan Schirino">
+  <meta name="author" content="Dylan Schirino">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title><?php bloginfo();?>-<?php the_title();?></title>
+  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri().'/css/styles.css';?>">
+</head>
 <?
 /*
 Template Name: Archive Projet
@@ -10,15 +23,13 @@ if(is_page()){
     'post_type' => 'post'
   ]);
 }
-
-get_header();
 ?>
 <body>
   <header class="headerproject">
-    <h1 aria-level="1" role="heading" class="header__title"><?php bloginfo();?>-<?php the_title();?></h1>
+    <h1 aria-level="1" class="header__title"><?php bloginfo();?>-<?php the_title();?></h1>
 
     <nav class="header__menu">
-      <h2 aria-level="2" role="heading" class="menu__title">Menu Principal</h2>
+      <h2 aria-level="2" class="menu__title">Menu Principal</h2>
       <div id="burger-shower" class="menu__burger">
         <span class="visualhidden">menu</span>
         <span class="menu__global menu__global--top"></span>
@@ -27,24 +38,24 @@ get_header();
       </div>
       <ul class="menu__list" id="menu">
         <li class="menu__element">
-          <a class="menu__link" href="<?php echo the_permalink('7');?>" alt="Vers la page d'accueil">Accueil</a>
+          <a class="menu__link" href="<?php echo the_permalink('7');?>" title="Vers la page d'accueil">Accueil</a>
         </li>
         <li class="menu__element">
-          <a class="menu__link menu__link--active" href="<?php echo the_permalink('17');?>" alt="Vers la page d'accueil">Projet</a>
+          <a class="menu__link menu__link--active" href="<?php echo the_permalink('17');?>" title="Vers la page d'accueil">Projet</a>
         </li>
         <li class="menu__element">
-          <a class="menu__link" href="<?php echo the_permalink('19');?>" alt="Vers la page d'accueil">About me</a>
+          <a class="menu__link" href="<?php echo the_permalink('19');?>" title="Vers la page d'accueil">About me</a>
         </li>
         <li class="menu__element">
-          <a class="menu__link" href="<?php echo the_permalink('21');?>" alt="Vers la page d'accueil">Contact</a>
+          <a class="menu__link" href="<?php echo the_permalink('21');?>" title="Vers la page d'accueil">Contact</a>
         </li>
         <li class="menu__element">
-          <a class="menu__link" href="<?php echo the_permalink('');?>" alt="Vers la page d'accueil">CV</a>
+          <a class="menu__link" href="<?php echo the_permalink('');?>" title="Vers la page d'accueil">CV</a>
         </li>
       </ul>
     </nav>
     <section class="introproject">
-      <h2 class="introproject__title" aria-level="2" role="heading">Projet</h2>
+      <h2 class="introproject__title" aria-level="2">Projet</h2>
       <div class="introproject__image retina">
         <?php if( get_field('image_tv')):
           $tv = get_field('image_tv');
@@ -62,7 +73,7 @@ get_header();
 
   <main id="content">
     <section class="listproject">
-      <h3 class="listproject__title" aria-level="3" role="heading">Liste de mes projets</h3>
+      <h3 class="listproject__title" aria-level="3">Liste de mes projets</h3>
       <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
         <div class="listproject__container">
           <a href="<?php the_permalink();?>" title="Voir la fiche" class="listproject__link">
@@ -79,4 +90,5 @@ get_header();
         </div>
       <?php endwhile; endif; ?>
     </section>
+  </main>
       <?php get_footer();?>

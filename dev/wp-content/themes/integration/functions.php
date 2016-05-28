@@ -5,7 +5,7 @@ add_image_size( 'thumb-lastproject', 377,269, true );
 add_image_size( 'thumb-tv', 420,300, true );
 add_image_size( 'thumb-bigimage', 890,422, true );
 add_image_size( 'thumb-screen', 404,226, true );
-add_image_size( 'thumb-canvas', 369,430, true );
+add_image_size( 'thumb-canvas', 400,600, true );
 /*
 *  Register nav menus
 */

@@ -5,10 +5,10 @@ get_header();
 ?>
 <body>
   <header class="headerproject">
-      <h1 aria-level="1" role="heading" class="header__title"><?php bloginfo();?> - <?php the_title();?></h1>
+      <h1 aria-level="1" class="header__title"><?php bloginfo();?> - <?php the_title();?></h1>
 
       <nav class="header__menu">
-        <h2 aria-level="2" role="heading" class="menu__title">Menu Principal</h2>
+        <h2 aria-level="2" class="menu__title">Menu Principal</h2>
         <div id="burger-shower" class="menu__burger">
           <span class="visualhidden">menu</span>
           <span class="menu__global menu__global--top"></span>
@@ -17,24 +17,24 @@ get_header();
         </div>
         <ul class="menu__list" id="menu">
           <li class="menu__element">
-            <a class="menu__link" href="<?php echo the_permalink('7');?>" alt="Vers la page d'accueil">Accueil</a>
+            <a class="menu__link" href="<?php echo the_permalink('7');?>" title="Vers la page d'accueil">Accueil</a>
           </li>
           <li class="menu__element">
-            <a class="menu__link menu__link--active" href="<?php echo the_permalink('17');?>" alt="Vers la page d'accueil">Projet</a>
+            <a class="menu__link menu__link--active" href="<?php echo the_permalink('17');?>" title="Vers la page d'accueil">Projet</a>
           </li>
           <li class="menu__element">
-            <a class="menu__link" href="<?php echo the_permalink('19');?>" alt="Vers la page d'accueil">About me</a>
+            <a class="menu__link" href="<?php echo the_permalink('19');?>" title="Vers la page d'accueil">About me</a>
           </li>
           <li class="menu__element">
-            <a class="menu__link" href="<?php echo the_permalink('21');?>" alt="Vers la page d'accueil">Contact</a>
+            <a class="menu__link" href="<?php echo the_permalink('21');?>" title="Vers la page d'accueil">Contact</a>
           </li>
           <li class="menu__element">
-            <a class="menu__link" href="<?php echo the_permalink('');?>" alt="Vers la page d'accueil">CV</a>
+            <a class="menu__link" href="<?php echo the_permalink('');?>" title="Vers la page d'accueil">CV</a>
           </li>
         </ul>
       </nav>
       <section class="view-project">
-        <h2 class="view-project__title" aria-level="2" role="heading"><?php echo the_title();?></h2>
+        <h2 class="view-project__title" aria-level="2"><?php echo the_title();?></h2>
         <?php if( get_field('image_big_projet')):
       $bigimage = get_field('image_big_projet');
       $bigimagesize='thumb-bigimage';
@@ -47,7 +47,7 @@ get_header();
       <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
     <section class="project-desc">
       <div class="project-desc__container">
-      <h3 class="project-desc__title" aria-level="3" role="heading">Le projet</h3>
+      <h3 class="project-desc__title" aria-level="3">Le projet</h3>
       <p class="project-desc__text">
         <?php echo the_field('intro');?>
       </p>
@@ -58,21 +58,20 @@ get_header();
       $screensize='thumb-screen';
       ?>
       <?php echo wp_get_attachment_image($screen_intro['id'],$screensize);?>
-    </div>
   <?php endif;?>
     </section>
 
     <section class="github">
-      <h4 class="github__title" aria-level="4" role="heading">Repository GitHub</h4>
+      <h4 class="github__title" aria-level="4">Repository GitHub</h4>
       <a class="github__button project-desc__button" href="<?php echo the_field('lien_vers_le_site');?>" title="Vous quittez le site vers <?php the_title();?>">Voir le repo GitHub</a>
     </section>
 
     <section class="project-info">
-      <h4 class="project-info__title" aria-level="4" role="heading">Comment le site est fait ?</h4>
+      <h4 class="project-info__title" aria-level="4">Comment le site est fait ?</h4>
 
       <article class="project-info__design">
         <div class="design__container">
-        <h5 class="design__title" aria-level="5" role="heading">Le design</h5>
+        <h5 class="design__title" aria-level="5">Le design</h5>
         <p class="design__text">
           <?php echo the_field('design_texte');?>
         </p>
@@ -82,14 +81,13 @@ get_header();
             $screen_intro = get_field('screen_intro');
             ?>
             <?php echo wp_get_attachment_image($screen_intro['id'],$screensize);?>
-          </div>
         <?php endif;?>
         </figure>
       </article>
 
       <article class="project-info__design project-info__design--contrainte">
         <div class="design__container design__container--contrainte">
-        <h5 class="design__title" aria-level="5" role="heading">Les Contraintes</h5>
+        <h5 class="design__title" aria-level="5">Les Contraintes</h5>
         <p class="design__text design__text--contrainte">
         <?php echo the_field('contrainte_texte');?>
         </p>
@@ -100,13 +98,12 @@ get_header();
           $screen_intro = get_field('screen_intro');
           ?>
           <?php echo wp_get_attachment_image($screen_intro['id'],$screensize);?>
-        </div>
       <?php endif;?>
       </figure>
       </article>
 
       <article class="project-info__time">
-        <h5 class="time__title" aria-level="5" role="heading">
+        <h5 class="time__title" aria-level="5">
           Temps en café
         </h5>
         <p class="time__subtitle">

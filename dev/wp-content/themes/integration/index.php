@@ -2,16 +2,29 @@
 /*
 Template Name: HomePage
 */
-get_header();
 ?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!--[if lt IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <meta charset="utf-8">
+  <meta name="description" content="Portefolio de Dylan Schirino">
+  <meta name="author" content="Dylan Schirino">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title><?php bloginfo();?>-<?php the_title();?></title>
+  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri().'/css/styles.css';?>">
+</head>
+
 <body>
 <header class="header">
   <div class="header__bckg">
-    <h1 aria-level="1" role="heading" class="header__title"><?php bloginfo();?>-<?php the_title();?></h1>
+    <h1 aria-level="1" class="header__title"><?php bloginfo();?>-<?php the_title();?></h1>
 
     <nav class="header__menu">
 
-      <h2 aria-level="2" role="heading" class="menu__title">Menu Principal</h2>
+      <h2 aria-level="2" class="menu__title">Menu Principal</h2>
       <div id="burger-shower" class="menu__burger">
         <span class="visualhidden">menu</span>
         <span class="menu__global menu__global--top"></span>
@@ -20,54 +33,52 @@ get_header();
       </div>
       <ul class="menu__list" id="menu">
         <li class="menu__element">
-          <a class="menu__link menu__link--active" href="<?php echo the_permalink('7');?>" alt="Vers la page d'accueil">Accueil</a>
+          <a class="menu__link menu__link--active" href="<?php echo the_permalink('7');?>" title="Vers la page d'accueil">Accueil</a>
         </li>
         <li class="menu__element">
-          <a class="menu__link" href="<?php echo the_permalink('17');?>" alt="Vers la page d'accueil">Projet</a>
+          <a class="menu__link" href="<?php echo the_permalink('17');?>" title="Vers la page d'accueil">Projet</a>
         </li>
         <li class="menu__element">
-          <a class="menu__link" href="<?php echo the_permalink('19');?>" alt="Vers la page d'accueil">About me</a>
+          <a class="menu__link" href="<?php echo the_permalink('19');?>" title="Vers la page d'accueil">About me</a>
         </li>
         <li class="menu__element">
-          <a class="menu__link" href="<?php echo the_permalink('21');?>" alt="Vers la page d'accueil">Contact</a>
+          <a class="menu__link" href="<?php echo the_permalink('21');?>" title="Vers la page d'accueil">Contact</a>
         </li>
         <li class="menu__element">
-          <a class="menu__link" href="<?php echo the_permalink('');?>" alt="Vers la page d'accueil">CV</a>
+          <a class="menu__link" href="<?php echo the_permalink('');?>" title="Vers la page d'accueil">CV</a>
         </li>
       </ul>
     </nav>
 
     <section class="mainimage">
-      <h2 class="mainimage__title" aria-level="2" role="heading">I'm Dylan Schirino</h2>
+      <h2 class="mainimage__title" aria-level="2">I'm Dylan Schirino</h2>
       <p class="mainimage__subtitle">
-        Un web-designer belge qui réalise vos sites-web.
+        Un web-designer belge qui réalise vos sites web.
       </p>
-      <a href="#content" class="mainimage__link" alt="Découvrir plus sur la page d'accueil"><span class="visualhidden">Accéder vers le bas</span></a>
+      <a href="#content" class="mainimage__link" title="Découvrir plus sur la page d'accueil"><span class="visualhidden">Accéder vers le bas</span></a>
     </section>
   </div>
 </header>
 <main id="content">
 
   <section class="lastproject">
-    <h3 class="lastproject__title" aria-level="3" role="heading">Projet récent</h3>
+    <h3 class="lastproject__title" aria-level="3">Projet récent</h3>
     <div class="lastproject__containerbutton">
     <a class="lastproject__button" href="<?php echo the_permalink('17');?>" title="Vers la page des projet">Voir plus de projet</a>
   </div>
     <a href="http://www.hepl01.cblue.be/~user31/dw/artiste/" class="lastproject__link" title="Vers le site de Nicolas de Stael">
       <span class="lastproject__link-text">Voir le site</span>
-      <div class="lastproject__image">
       <?php if( get_field('image_projet')):
     $projet = get_field('image_projet');
     $projetsize='thumb-lastproject';
     ?>
         <?php echo wp_get_attachment_image($projet['id'],$projetsize);?>
       <?php endif;?>
-    </div>
     </a>
   </section>
 
   <section class="guesswhat">
-    <h3 class="guesswhat__title" arial-level="3" role="heading">Hey devinez quoi &nbsp;?</h3>
+    <h4 class="guesswhat__title" aria-level="4">Hey devinez quoi &nbsp;?</h4>
     <div class="gueswhat__center">
       <p class="guesswhat__subtitle">Je suis disponible&nbsp;!</p>
       <a class="guesswhat__button" href="<?php echo the_permalink('21');?>" title="Vers la page de contact">Contactez moi </a>
@@ -75,9 +86,9 @@ get_header();
   </section>
 
   <section class="whyme">
-    <h3 class="whyme__title" aria-level="3" role="heading">
+    <h5 class="whyme__title" aria-level="5">
       Pourquoi moi&nbsp;?
-    </h3>
+    </h5>
     <div class="whyme__container">
       <div class="whyme__presentation">
         <p class="presentation__text presentation__text--left">
@@ -97,7 +108,7 @@ get_header();
 
 
   <section class="skills">
-    <h3 class="skills__title" aria-level="3" role="heading">Mes compétences</h3>
+    <h6 class="skills__title" aria-level="6">Mes affinités</h6>
 
     <a href="cv" title="Le fichier fait 2MB" class="skills__button">Télécharger mon cv</a>
 
@@ -151,5 +162,27 @@ get_header();
 
     </div>
   </section>
+</main>
+<footer class="footer">
+  <div class="footer__container">
 
-  <?php get_footer();?>
+    <a class="footer__link footer__link--github" href="https://github.com/dylanschirino" title="Voir mon Github">GitHub</a>
+
+    <a class="footer__link footer__link--facebook" href="https://www.facebook.com/dylan.schirino" title="Voir mon facebook">Facebook</a>
+
+    <a class="footer__link footer__link--linkedin" href="https://www.linkedin.com/in/dylan-schirino" title="Me voir sur linkedin">Linkedin</a>
+
+    <a class="footer__link footer__link--phone" href="tel:+32493526168" title="Me téléphoner?">Téléphone</a>
+
+  </div>
+  <div class="footer__subfooter">
+    <p class="subfooter__text">
+      Design par Dylan Schirino
+    </p>
+</div>
+</footer>
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri().'/assets/assets.js';?>"></script>
+
+</body>
+</html>

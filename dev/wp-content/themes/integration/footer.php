@@ -5,9 +5,9 @@
 
     <a class="footer__link footer__link--facebook" href="https://www.facebook.com/dylan.schirino" title="Voir mon facebook">Facebook</a>
 
-    <a class="footer__link footer__link--linkedin" href="https://www.linkedin.com/in/dylan-schirino" alt="Me voir sur linkedin">Linkedin</a>
+    <a class="footer__link footer__link--linkedin" href="https://www.linkedin.com/in/dylan-schirino" title="Me voir sur linkedin">Linkedin</a>
 
-    <a class="footer__link footer__link--phone" href="tel:+32493526168" alt="Me téléphoner?">Téléphone</a>
+    <a class="footer__link footer__link--phone" href="tel:+32493526168" title="Me téléphoner?">Téléphone</a>
 
   </div>
   <div class="footer__subfooter">
