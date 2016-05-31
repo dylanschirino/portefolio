@@ -1485,4 +1485,32 @@ span[role="alert"] {
   .footer__link {
     padding-right: 1em; } }
 
+/* PORTEFOLIO
+ *
+ * /sass/components/404.scss - Design of 404 stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 31/05/2016
+ */
+.error404 {
+  margin-left: 5em; }
+  .error404__title {
+    text-transform: uppercase;
+    font-size: 3em;
+    padding: 1em 0; }
+  .error404__description {
+    font-size: 1.6em;
+    line-height: 1.8em; }
+  .error404__return {
+    font-size: 1.4em;
+    line-height: 2em; }
+  .error404__link {
+    display: block;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #4E6482; }
+    .error404__link:hover {
+      color: #303A40;
+      text-decoration: underline; }
+
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,33 @@
+/* PORTEFOLIO
+ *
+ * /sass/components/404.scss - Design of 404 stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 31/05/2016
+ */
+ .error404{
+   margin-left: 5em;
+   &__title{
+     text-transform: uppercase;
+     font-size: 3em;
+     padding: 1em 0;
+   }
+   &__description{
+     font-size: 1.6em;
+     line-height: 1.8em;
+   }
+   &__return{
+     font-size: 1.4em;
+     line-height: 2em;
+   }
+   &__link{
+     display: block;
+     font-size: 2em;
+     text-transform: uppercase;
+     color:$blue;
+     &:hover{
+       color:$blueGray;
+       text-decoration: underline;
+     }
+   }
+ }
