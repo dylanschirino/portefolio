@@ -27,7 +27,7 @@ get_header();
           <a class="menu__link menu__link--active" href="<?php echo the_permalink('21');?>" title="Vers la page d'accueil">Contact</a>
         </li>
         <li class="menu__element">
-          <a class="menu__link" href="<?php echo the_permalink('');?>" title="Vers la page d'accueil">CV</a>
+          <a class="menu__link" href="http://schirino.be/cv.pdf" title="Vers la page d'accueil">CV</a>
         </li>
       </ul>
     </nav>
