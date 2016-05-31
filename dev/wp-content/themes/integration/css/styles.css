@@ -1507,6 +1507,7 @@ span[role="alert"] {
   .error404__link {
     display: block;
     font-size: 2em;
+    padding-top: 1em;
     text-transform: uppercase;
     color: #4E6482; }
     .error404__link:hover {
