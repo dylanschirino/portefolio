@@ -27,7 +27,7 @@
     display: block;
     transition: .2s linear;
     &:hover{
-      color:black;
+      color:$white;
       transform: rotate(-5deg);
     }
     &--active{

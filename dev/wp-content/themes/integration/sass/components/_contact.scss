@@ -43,12 +43,13 @@
     font:1.8em $montserratLight;
     padding-bottom: 4em;
     transition: .2s ease-in-out;
-    &:hover{
-      transform:translateY(-3px);
-    }
   }
   &__link{
     color:$white;
+    &:hover{
+      color:$greenLight;
+      transition: .2s ease-in-out;
+    }
     &::before{
       font:2em $glyphsStack;
       padding-right:1.5em;
