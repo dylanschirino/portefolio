@@ -63,7 +63,7 @@ get_header();
 
     <section class="github">
       <h4 class="github__title" aria-level="4">Repository GitHub</h4>
-      <a class="github__button project-desc__button" href="<?php echo the_field('lien_vers_le_site');?>" title="Vous quittez le site vers <?php the_title();?>">Voir le repo GitHub</a>
+      <a class="github__button project-desc__button" href="<?php echo the_field('lien_repo_git');?>" title="Vous quittez le site vers <?php the_title();?>">Voir le repo GitHub</a>
     </section>
 
     <section class="project-info">
@@ -77,10 +77,10 @@ get_header();
         </p>
       </div>
         <figure class="design__imagecontainer">
-          <?php if( get_field('screen_intro')):
-            $screen_intro = get_field('screen_intro');
+          <?php if( get_field('screen_design')):
+            $screen_design = get_field('screen_design');
             ?>
-            <?php echo wp_get_attachment_image($screen_intro['id'],$screensize);?>
+            <?php echo wp_get_attachment_image($screen_design['id'],$screensize);?>
         <?php endif;?>
         </figure>
       </article>
@@ -94,10 +94,10 @@ get_header();
 
       </div>
       <figure class="design__imagecontainer design__imagecontainer--contrainte">
-        <?php if( get_field('screen_intro')):
-          $screen_intro = get_field('screen_intro');
+        <?php if( get_field('screen_contrainte')):
+          $screen_contrainte = get_field('screen_contrainte');
           ?>
-          <?php echo wp_get_attachment_image($screen_intro['id'],$screensize);?>
+          <?php echo wp_get_attachment_image($screen_contrainte['id'],$screensize);?>
       <?php endif;?>
       </figure>
       </article>

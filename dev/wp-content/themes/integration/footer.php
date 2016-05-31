@@ -16,7 +16,8 @@
     </p>
 </div>
 </footer>
-<script type="text/javascript" src="<?php echo get_template_directory_uri().'/assets/jquery-2.2.1.min.js';?>"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri().'/assets/retina.min.js';?>"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri().'/assets/assets.js';?>"></script>
 
 </body>

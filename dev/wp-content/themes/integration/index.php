@@ -1,22 +1,9 @@
-<?
+<?php
 /*
 Template Name: HomePage
 */
+get_header();
 ?>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <!--[if lt IE 9]>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
-  <meta charset="utf-8">
-  <meta name="description" content="Portefolio de Dylan Schirino">
-  <meta name="author" content="Dylan Schirino">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <title><?php bloginfo();?>-<?php the_title();?></title>
-  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri().'/css/styles.css';?>">
-</head>
-
 <body>
 <header class="header">
   <div class="header__bckg">
@@ -163,26 +150,4 @@ Template Name: HomePage
     </div>
   </section>
 </main>
-<footer class="footer">
-  <div class="footer__container">
-
-    <a class="footer__link footer__link--github" href="https://github.com/dylanschirino" title="Voir mon Github">GitHub</a>
-
-    <a class="footer__link footer__link--facebook" href="https://www.facebook.com/dylan.schirino" title="Voir mon facebook">Facebook</a>
-
-    <a class="footer__link footer__link--linkedin" href="https://www.linkedin.com/in/dylan-schirino" title="Me voir sur linkedin">Linkedin</a>
-
-    <a class="footer__link footer__link--phone" href="tel:+32493526168" title="Me téléphoner?">Téléphone</a>
-
-  </div>
-  <div class="footer__subfooter">
-    <p class="subfooter__text">
-      Design par Dylan Schirino
-    </p>
-</div>
-</footer>
-<script type="text/javascript" src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri().'/assets/assets.js';?>"></script>
-
-</body>
-</html>
+<?php get_footer();?>
