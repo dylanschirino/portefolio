@@ -4,10 +4,11 @@ Template Name: Archive Projet
 */
 if(is_page()){
   query_posts([
-    'posts_per_page' => 5,
+    'posts_per_page' => 2,
     'orderby' => 'date',
     'order' => 'DESC',
-    'post_type' => 'post'
+    'post_type' => 'post',
+    'paged' => get_query_var('paged')
   ]);
 }
 get_header();
@@ -77,6 +78,7 @@ get_header();
           </a>
         </div>
       <?php endwhile; endif; ?>
+      <?php wp_pagenavi();?>
     </section>
   </main>
       <?php get_footer();?>
