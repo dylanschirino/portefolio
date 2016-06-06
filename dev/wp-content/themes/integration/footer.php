@@ -16,6 +16,15 @@
     </p>
 </div>
 </footer>
+<noscript>
+<style>
+/* On affiche le menu simplement  */
+.menu__list{
+display: block !important;
+
+}
+</style>
+</noscript>
 <script type="text/javascript" src="<?php echo get_template_directory_uri().'/assets/retina.min.js';?>"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri().'/assets/assets.js';?>"></script>
