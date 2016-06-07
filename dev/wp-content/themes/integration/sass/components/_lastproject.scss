@@ -48,14 +48,8 @@
     font-size: 1.8em;
     text-transform: uppercase;
     color:black;
-    &:hover .lastproject__link-text{
-      opacity: 1;
-      z-index: 1;
-    }
   }
   &__link-text{
-    opacity: 0;
-    transition:opacity .2s ease-in-out;
     &::before{
       content:"\e908";
       display: block;

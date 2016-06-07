@@ -54,13 +54,14 @@ get_header();
     <a class="lastproject__button" href="<?php echo the_permalink('17');?>" title="Vers la page des projet">Voir plus de projets</a>
   </div>
     <a href="http://www.hepl01.cblue.be/~user31/dw/artiste/" class="lastproject__link" title="Vers le site de Nicolas de Stael">
-      <span class="lastproject__link-text">Voir le site</span>
+
       <?php if( get_field('image_projet')):
     $projet = get_field('image_projet');
     $projetsize='thumb-lastproject';
     ?>
         <?php echo wp_get_attachment_image($projet['id'],$projetsize);?>
       <?php endif;?>
+        <span class="lastproject__link-text">Voir le site</span>
     </a>
   </section>
 

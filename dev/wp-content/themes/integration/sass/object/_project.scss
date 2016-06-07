@@ -33,7 +33,16 @@
     float: left;
   }
 }
-
+/***************    PAGINATION ************/
+.wp-pagenavi{
+  font-size: 1.6em;
+  padding: 2em 0;
+  text-align: center;
+}
+.nextpostslink,.previouspostslink{
+  text-decoration: underline;
+  padding-left: 1em;
+}
 /* MEDIAQUERIES FOR INTROPROJECT*/
 
 @media screen and (max-width:1123px) {
@@ -152,7 +161,7 @@
         top:40%;
       }
     }
-    }
+  }
 }
 @media screen and (max-width:471px) {
   .listproject{

@@ -282,7 +282,7 @@ p {
 
 .lastproject__link-text {
   position: absolute;
-  left: 250px;
+  right: 130px;
   top: 100px;
   width: 7em; }
 
@@ -359,6 +359,16 @@ p {
   margin-left: 18.5em;
   float: left; }
 
+/***************    PAGINATION ************/
+.wp-pagenavi {
+  font-size: 1.6em;
+  padding: 2em 0;
+  text-align: center; }
+
+.nextpostslink, .previouspostslink {
+  text-decoration: underline;
+  padding-left: 1em; }
+
 /* MEDIAQUERIES FOR INTROPROJECT*/
 @media screen and (max-width: 1123px) {
   .introproject img {
@@ -423,11 +433,9 @@ p {
   .listproject__content {
     position: absolute;
     top: 40%;
-    -webkit-transform: translateY(-40%);
-            transform: translateY(-40%);
+    transform: translateY(-40%);
     left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%); }
+    transform: translateX(-50%); }
     .listproject__content--small {
       position: absolute;
       top: 20%; }
@@ -823,8 +831,7 @@ p {
   transition: .2s linear; }
   .menu__link:hover {
     color: white;
-    -webkit-transform: rotate(-5deg);
-            transform: rotate(-5deg); }
+    transform: rotate(-5deg); }
   .menu__link--active::after {
     content: "";
     display: block;
@@ -840,8 +847,7 @@ p {
     .menu__element:hover, .menu__element:focus {
       color: black; }
   .menu__link:hover {
-    -webkit-transform: none;
-            transform: none; }
+    transform: none; }
   .menu__link--active::after {
     display: none; }
   .menu__burger {
@@ -855,8 +861,7 @@ p {
     top: 40px;
     left: 10px; }
   .menu__global {
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
+    backface-visibility: hidden;
     position: absolute;
     display: block;
     left: 0;
@@ -870,20 +875,16 @@ p {
     .menu__global--bottom {
       top: 28px; }
   .menu__global--top-click {
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
+    backface-visibility: hidden;
     top: 15px;
-    -webkit-transform: rotate(50deg);
-            transform: rotate(50deg);
+    transform: rotate(50deg);
     transition: 0.4s 0.4s; }
   .menu__global--middle-click {
     opacity: 0; }
   .menu__global--bottom-click {
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
+    backface-visibility: hidden;
     top: 15px;
-    -webkit-transform: rotate(-410deg);
-            transform: rotate(-410deg);
+    transform: rotate(-410deg);
     transition: 0.4s 0.4s; } }
 
 .mainimage {
@@ -898,8 +899,7 @@ p {
     display: inline-block;
     transition: .2s ease-in-out; }
     .mainimage__link:hover {
-      -webkit-transform: translateY(10px);
-              transform: translateY(10px); }
+      transform: translateY(10px); }
     .mainimage__link::after {
       font-family: "glyphs";
       font-size: 2.5em;
@@ -1073,18 +1073,12 @@ p {
     font-size: 1.8em;
     text-transform: uppercase;
     color: black; }
-    .lastproject__link:hover .lastproject__link-text {
-      opacity: 1;
-      z-index: 1; }
-  .lastproject__link-text {
-    opacity: 0;
-    transition: opacity .2s ease-in-out; }
-    .lastproject__link-text::before {
-      content: "\e908";
-      display: block;
-      font: 3em "glyphs";
-      padding-bottom: 0.63em;
-      text-align: center; }
+  .lastproject__link-text::before {
+    content: "\e908";
+    display: block;
+    font: 3em "glyphs";
+    padding-bottom: 0.63em;
+    text-align: center; }
 
 @media screen and (max-width: 1024px) {
   .lastproject__containerbutton {
@@ -1319,8 +1313,7 @@ p {
     width: 2px;
     height: 40em;
     background: white;
-    -webkit-transform: skewX(-15deg);
-            transform: skewX(-15deg); }
+    transform: skewX(-15deg); }
   .contact__element {
     font: 1.8em "montserratlight", Helvetica Neue, Arial, sans-serif;
     padding-bottom: 4em;
@@ -1524,13 +1517,5 @@ span[role="alert"] {
     .error404__link:hover {
       color: #303A40;
       text-decoration: underline; }
-      .wp-pagenavi{
-        font-size: 1.6em;
-        padding: 2em 0;
-        text-align: center;
-      }
-      .nextpostslink,.previouspostslink{
-        text-decoration: underline;
-        padding-left: 1em;
-      }
+
 /*# sourceMappingURL=styles.css.map */

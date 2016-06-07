@@ -41,7 +41,6 @@ get_header();
         <h2 class="about__title" aria-level="2">About me</h2>
         <p class="about__text">
           <?php echo the_field('description');?>
-        </p>
           </div>
         </section>
         <section class="canvas">
@@ -55,7 +54,7 @@ get_header();
           <?php endif;?>
           <canvas class="draw" id="canvas" width="500" height="550">
             <p>Your browser doesn't support canvas.</p>
-            <p><a href="http://browserhappy.com">Change it.</a></p>
+            <a href="http://browserhappy.com">Change it.</a>
           </canvas>
         </div>
       </section>

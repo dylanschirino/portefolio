@@ -10,4 +10,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <title><?php bloginfo();?>-<?php the_title();?></title>
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri().'/css/styles.css';?>">
+  <noscript>
+  <style>
+  /* On affiche le menu simplement  */
+  .menu__list{
+  display: block !important;
+
+  }
+  </style>
+  </noscript>
 </head>
