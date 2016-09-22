@@ -186,7 +186,7 @@ p {
 
 .skills__container {
   width: 33%;
-  margin: 1em 0 0 12.5em; }
+  margin: 1em 0 0 22.5em; }
   .skills__container--left {
     float: left; }
   .skills__container--right {
@@ -229,24 +229,32 @@ p {
   height: 3.94em;
   margin: 2em auto; }
 
-@media screen and (max-width: 855px) {
+@media screen and (max-width: 1011px) {
+  .skills__title {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 2em; }
   .skills__container {
-    width: 50%;
+    margin: 0 4em; } }
+
+@media screen and (max-width: 851px) {
+  .skills__container {
+    width: 40%;
     margin: auto;
     float: none; } }
 
 @media screen and (max-width: 652px) {
-  .skills__title {
-    text-align: center;
-    margin: 0; }
   .skills__container {
     width: 50%;
     margin: auto;
     float: none; } }
 
 @media screen and (max-width: 572px) {
+  .skills__content {
+    display: block;
+    margin: auto; }
   .skills__container {
-    width: 60%;
+    width: 100%;
     margin: auto; } }
 
 @media screen and (max-width: 413px) {
@@ -1020,6 +1028,10 @@ p {
     .skills__button:hover {
       color: white;
       background-color: #303A40; }
+
+@media screen and (max-width: 1011px) {
+  .skills {
+    background: none; } }
 
 /* PORTEFOLIO
 *

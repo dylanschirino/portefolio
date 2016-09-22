@@ -18,7 +18,7 @@
   }
   &__container{
     width:33%;
-    margin:1em 0 0 12.5em;
+    margin:1em 0 0 22.5em;
     &--left{
       float: left;
     }
@@ -72,11 +72,22 @@
     margin:2em auto;
   }
 }
-
-@media screen and (max-width:855px) {
+@media screen and (max-width:1011px) {
+  .skills{
+    &__title{
+      text-align: center;
+      margin: 0;
+      padding-bottom: 2em;
+    }
+    &__container{
+      margin:0 4em;
+    }
+  }
+}
+@media screen and (max-width:851px) {
   .skills{
     &__container{
-      width: 50%;
+      width: 40%;
       margin: auto;
       float: none;
     }
@@ -84,10 +95,6 @@
 }
 @media screen and (max-width:652px) {
   .skills{
-    &__title{
-      text-align: center;
-      margin: 0;
-    }
     &__container{
       width: 50%;
       margin: auto;
@@ -97,8 +104,12 @@
 }
 @media screen and (max-width:572px) {
   .skills{
+    &__content{
+      display: block;
+      margin: auto;
+    }
     &__container{
-      width:60%;
+      width:100%;
       margin: auto;
     }
   }
