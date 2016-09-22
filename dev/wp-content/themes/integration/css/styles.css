@@ -920,13 +920,6 @@ p {
     font: 3.6em "montserratlight", Helvetica Neue, Arial, sans-serif;
     text-align: center;
     padding: 1.527em 0; }
-  .whyme__presentation::after {
-    content: "";
-    display: block;
-    width: 16em;
-    height: 1px;
-    background: white;
-    margin: auto; }
 
 .presentation__text {
   font: 1.4em/1.7em "montserratlight", Helvetica Neue, Arial, sans-serif;

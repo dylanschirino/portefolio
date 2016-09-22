@@ -15,16 +15,6 @@
     text-align: center;
     padding:1.527em 0;
   }
-  &__presentation{
-    &::after{
-      content:"";
-      display: block;
-      width: 16em;
-      height:1px;
-      background: $white;
-      margin: auto;
-    }
-  }
 }
 .presentation{
   &__text{
