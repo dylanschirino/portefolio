@@ -793,8 +793,10 @@ p {
 */
 .footer {
   text-align: center; }
-  .footer__link {
+  .footer__element {
     display: inline-block; }
+  .footer__link {
+    display: block; }
     .footer__link::before {
       display: block;
       text-align: center; }
@@ -1439,8 +1441,11 @@ span[role="alert"] {
   background-color: #D8D8D8; }
   .footer__link {
     font: 1.2em "montserratlight", Helvetica Neue, Arial, sans-serif;
-    padding: 1.7em 2.5em 1.7em 0;
-    color: #303A40; }
+    padding: 1.5em;
+    color: #303A40;
+    transition: .2s ease-in-out; }
+    .footer__link:hover, .footer__link:focus {
+      transform: translateY(-4px); }
     .footer__link::before {
       color: #303A40;
       font: 2.8em/1.5em "glyphs"; }

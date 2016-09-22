@@ -8,8 +8,11 @@
 
 .footer{
   text-align: center;
+  &__element{
+    display:inline-block;
+  }
   &__link{
-    display: inline-block;
+    display:block;
     &::before{
       display:block;
       text-align: center;
