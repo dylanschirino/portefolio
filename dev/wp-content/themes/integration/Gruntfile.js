@@ -19,6 +19,7 @@ module.exports = function( grunt ) {
             "preview": {
                 "bsFiles": {
                     "src": "css/*.css"
+                    
                 },
                 "options": {
                     "proxy": "localhost:8888", // TODO: adapt to you configuration

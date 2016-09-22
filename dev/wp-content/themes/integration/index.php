@@ -23,16 +23,16 @@ get_header();
           <a class="menu__link menu__link--active" href="<?php echo the_permalink('7');?>" title="Vers la page d'accueil">Accueil</a>
         </li>
         <li class="menu__element">
-          <a class="menu__link" href="<?php echo the_permalink('17');?>" title="Vers la page d'accueil">Projet</a>
+          <a class="menu__link" href="<?php echo the_permalink('17');?>" title="Vers la page projet">Projet</a>
         </li>
         <li class="menu__element">
-          <a class="menu__link" href="<?php echo the_permalink('19');?>" title="Vers la page d'accueil">About me</a>
+          <a class="menu__link" href="<?php echo the_permalink('19');?>" title="Vers la page about">About me</a>
         </li>
         <li class="menu__element">
-          <a class="menu__link" href="<?php echo the_permalink('21');?>" title="Vers la page d'accueil">Contact</a>
+          <a class="menu__link" href="<?php echo the_permalink('21');?>" title="Vers la page contact">Contact</a>
         </li>
         <li class="menu__element">
-          <a class="menu__link" href="http://schirino.be/cv.pdf" title="Vers la page d'accueil">CV</a>
+          <a class="menu__link" href="http://schirino.be/cv.pdf" title="Vers la page cv">cv</a>
         </li>
       </ul>
     </nav>
@@ -47,26 +47,39 @@ get_header();
   </div>
 </header>
 <main id="content">
-
   <section class="lastproject">
-    <h3 class="lastproject__title" aria-level="3">Projet récent</h3>
-    <div class="lastproject__containerbutton">
-    <a class="lastproject__button" href="<?php echo the_permalink('17');?>" title="Vers la page des projet">Voir plus de projets</a>
-  </div>
-    <a href="http://www.hepl01.cblue.be/~user31/dw/artiste/" class="lastproject__link" title="Vers le site de Nicolas de Stael">
+    <h3 class="lastproject__title" aria-level="3">Derniers projets</h3>
 
+    <div class="lastproject__mainbox">
+
+    <div class="lastproject__box">
+    <h4 class="lastproject__name lastproject__name--first" aria-level="4"><?php echo the_field('nom_projet_1');?></h4>
+    <a href="<?php echo the_field('lien_projet');?>" class="lastproject__link">
       <?php if( get_field('image_projet')):
     $projet = get_field('image_projet');
     $projetsize='thumb-lastproject';
     ?>
-        <?php echo wp_get_attachment_image($projet['id'],$projetsize);?>
-      <?php endif;?>
-        <span class="lastproject__link-text">Voir le site</span>
+    <?php echo wp_get_attachment_image($projet['id'],$projetsize);?>
+    <?php endif;?>
     </a>
+  </div>
+    <div class="lastproject__box">
+    <h4 class="lastproject__name" aria-level="4"><?php echo the_field('nom_projet_1');?></h4>
+    <a href="<?php echo the_field('lien_projet');?>" class="lastproject__link">
+    <?php if( get_field('image_projet')):
+    $projet = get_field('image_projet');
+    $projetsize='thumb-lastproject';
+    ?>
+    <?php echo wp_get_attachment_image($projet['id'],$projetsize);?>
+      <?php endif;?>
+    </a>
+  </div>
+
+</div>
   </section>
 
   <section class="guesswhat">
-    <h4 class="guesswhat__title" aria-level="4">Hey, devinez quoi &nbsp;?</h4>
+    <h3 class="guesswhat__title" aria-level="3">Hey, devinez quoi &nbsp;?</h3>
     <div class="gueswhat__center">
       <p class="guesswhat__subtitle">Je suis disponible&nbsp;!</p>
       <a class="guesswhat__button" href="<?php echo the_permalink('21');?>" title="Vers la page de contact">Contactez moi </a>
@@ -74,9 +87,9 @@ get_header();
   </section>
 
   <section class="whyme">
-    <h5 class="whyme__title" aria-level="5">
+    <h3 class="whyme__title" aria-level="3">
       Pourquoi moi&nbsp;?
-    </h5>
+    </h3>
     <div class="whyme__container">
       <div class="whyme__presentation">
         <p class="presentation__text presentation__text--left">
@@ -96,7 +109,7 @@ get_header();
 
 
   <section class="skills">
-    <h6 class="skills__title" aria-level="6">Mes affinités</h6>
+    <h3 class="skills__title" aria-level="3">Mes affinités</h3>
 
     <a href="http://schirino.be/cv.pdf" title="Le fichier fait 2.2MB" class="skills__button">Télécharger mon cv</a>
 

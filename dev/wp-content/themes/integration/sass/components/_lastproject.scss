@@ -14,14 +14,26 @@
     line-height: 2.4em;
     text-transform: uppercase;
     letter-spacing: 2px;
-    padding-top: 3.125em;
+    padding: 2em 0;
     &::before{
       content:"\e90f";
       padding-right: 0.65em;
-      font:2.4em$glyphsStack;
+      font:2.4em $glyphsStack;
       line-height: 2.4em;
       vertical-align: middle;
     }
+  }
+  &__mainbox{
+    padding-bottom: 4em;
+  }
+  &__name{
+    font:1.8em $montserratLight;
+    color: $white;
+    text-align: center;
+    line-height: 2em;
+    padding-bottom: 1em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
   }
   &__containerbutton{
     &::before,&::after{
@@ -44,75 +56,32 @@
       color:#53D1A7;
     }
   }
-  &__link{
-    font-size: 1.8em;
-    text-transform: uppercase;
-    color:black;
-  }
-  &__link-text{
-    &::before{
-      content:"\e908";
-      display: block;
-      font: 3em $glyphsStack;
-      padding-bottom: 0.63em;
-      text-align: center;
+}
+
+@media screen and (max-width:844px) {
+  .lastproject{
+    &__name{
+      padding-top: 4em;
     }
   }
 }
-@media screen and (max-width:1024px) {
+@media screen and (max-width:480px) {
 
   .lastproject{
-    &__containerbutton{
-      width: 50%;
-      margin: auto;
-      &::before,&::after{
-        background: none;
+    &__name{
+      &--first{
+        padding-top:0;
       }
     }
-  }
-}
-@media screen and (max-width:562px) {
-
-  .lastproject{
-    &__image{
-      float: none;
-      max-width: 90%;
-      height: auto;
-      margin: auto;
+    &__name + &__name{
+      padding-top:4em;
     }
-    &__link-text{
-      top:60px;
-      left:200px;
-      z-index: 1px;
-    }
-    &__containerbutton{
-      display: block;
-      width: 100%;
-      margin: auto;
-      float:none;
-    }
-  }
-}
-@media screen and (max-width:428px) {
-
-  .lastproject{
-    &__link-text{
-      top:60px;
-      left:150px;
-    }
-  }
-}
-@media screen and (max-width:336px) {
-
-  .lastproject{
     &__title{
       &::before{
+        display: block;
+        text-align: center;
         padding: 0;
       }
-    }
-    &__link-text{
-      top:60px;
-      left:100px;
     }
   }
 }
